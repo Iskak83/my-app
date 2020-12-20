@@ -1,0 +1,34 @@
+$lins-color: white;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#stylingNav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 10%;
+  background-color: blue;
+  #linksStyle {
+    color: white;
+  }
+}
+#main {
+  margin-top: 5%;
+  padding: 0px;
+  // background-color: rgb(224, 182, 182);
+}
+footer {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  a {
+    color: $lins-color;
+  }
+}

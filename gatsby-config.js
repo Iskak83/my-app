@@ -1,6 +1,22 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Gatsby Default Starter',
+   menuLinks:[
+      {
+        name:'/home',
+        link:'/'
+      },
+   
+   ]
+  },
+  
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: require("sass"),
+      },
+    }, 
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
@@ -8,10 +24,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "pages",
+        path: "./src/pages/",
       },
-      __key: "images",
+      __key: "pages",
     },
   ],
 };

@@ -1,0 +1,11 @@
+$titles-color: rgb(71, 71, 245);
+$background-color: rgb(247, 240, 240);
+$discription-color: rgb(34, 22, 22);
+
+#edu-container {
+  margin: 5em;
+  background-color: $background-color;
+  h1 {
+    color: $discription-color;
+  }
+}

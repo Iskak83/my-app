@@ -8,12 +8,12 @@ import "./education.scss"
 
 
 // markup
-const Home = () => {
+const Education = () => {
   return (
       <Layout>
         <div id="edu-container">
             <h1 >
-                This is Home Page!
+                This is Education Page!
                 <br />
             </h1>
         </div>
@@ -21,4 +21,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Education
