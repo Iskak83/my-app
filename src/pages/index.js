@@ -17,7 +17,7 @@ const Home = () => {
       <Layout>
         <div id="edu-container">
             <h1 >
-                This is Home Page!
+                Welcome to my webpage!
                 <br />
             </h1>
             <div className="my-images"/>
