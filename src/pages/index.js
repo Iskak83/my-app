@@ -10,7 +10,7 @@ import "./styles.scss"
 
 const IndexPage = () => {
   return (
-      <Layout>
+    <Layout>
         <SEO title='Iskak Mantyubetov'/>
         <Home/>
         <Projects/>

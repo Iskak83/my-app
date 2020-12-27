@@ -9,7 +9,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
   align-content: center;
   width: 100%;
   top: 0;
-  height: 10%;
+  height: 12%;
   background-color: $nav-background-color;
   #burger {
     display: none;
@@ -25,11 +25,18 @@ $logo-shaddow-color: rgb(167, 189, 118);
   }
   #nav-links {
     float: right;
-
     margin: 3em 1em;
     button {
       color: $links-color;
+      background: transparent;
+      border: transparent;
       margin: 0em 1em;
+    }
+    button:hover {
+      color: blue;
+    }
+    button:focus {
+      outline: none;
     }
   }
 }

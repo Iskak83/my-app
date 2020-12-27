@@ -7,10 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-
-
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
@@ -22,9 +20,7 @@ const Layout = ({ children }) => {
             <main>{children}</main> 
           </div>
           
-          <footer >
-              <Link href="https://www.linkedin.com/in/mantyubetov/">linkedin</Link>
-          </footer>
+          <Footer/>
     </React.Fragment>
   )
 }
