@@ -1,13 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-   menuLinks:[
-      {
-        name:'/home',
-        link:'/'
-      },
-   
-   ]
+    title: `Iskak Mantyubetov`,
+		description: `Portfolio Site`,
+		author: `Iskak Mantyubetov`,
   },
   
   plugins: [
@@ -29,5 +24,18 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `gatsby-starter-default`,
+				short_name: `starter`,
+				start_url: `/`,
+				background_color: `#663399`,
+				theme_color: `#663399`,
+				display: `minimal-ui`,
+				icon: `src/images/coding-job.png`
+			}
+    },
+    "gatsby-plugin-smoothscroll"
   ],
 };

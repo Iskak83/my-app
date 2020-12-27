@@ -1,20 +1,23 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import "./index.scss"
+import SEO from '../components/seo';
+import Home from '../components/home';
+import Projects from '../components/projects';
+import Education from '../components/education';
+import Hobby from '../components/hobbies'
 
-const Home = () => {
+import "./styles.scss"
+
+const IndexPage = () => {
   return (
       <Layout>
-        <div id="edu-container">
-            <h1 >
-                Welcome to iskakm.com!
-                <br />
-            </h1>
-            <div className="my-images"/>
-                 
-        </div>
+        <SEO title='Iskak Mantyubetov'/>
+        <Home/>
+        <Projects/>
+        <Education />
+        <Hobby />
     </Layout>
   )
 }
 
-export default Home
+export default IndexPage

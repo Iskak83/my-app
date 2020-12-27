@@ -15,17 +15,17 @@ import "./layout.scss"
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Header id="header"/>
-      
-      <div id="main">
-        <main>{children}</main> 
-      </div>
-      
-      <footer >
-          <Link href="https://www.linkedin.com/in/mantyubetov/">linkedin</Link>
-      </footer>
-    </>
+    <React.Fragment>
+          <Header id="header"/>
+          
+          <div id="main">
+            <main>{children}</main> 
+          </div>
+          
+          <footer >
+              <Link href="https://www.linkedin.com/in/mantyubetov/">linkedin</Link>
+          </footer>
+    </React.Fragment>
   )
 }
 
