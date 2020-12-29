@@ -7,9 +7,10 @@ $logo-shaddow-color: rgb(167, 189, 118);
   overflow: hidden;
   position: fixed;
   align-content: center;
+  z-index: 100;
   width: 100%;
   top: 0;
-  height: 12%;
+  height: 10%;
   background-color: $nav-background-color;
   #burger {
     display: none;

@@ -1,22 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
 import './footer.scss';
 
 const Footer = () => {
-	const scrollTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	};
+
 
 	return (
 		<footer id="footer">
-			
-				<button type="button" onClick={scrollTop} className="scroll-to-top-bttn">
-					<FontAwesomeIcon icon={faAngleUp} />
-				</button>
-			
+
 			<div className="footer-links">
 				<a href="mailto: ayzik55@gmail.com">
 					<FontAwesomeIcon icon={faEnvelope} />

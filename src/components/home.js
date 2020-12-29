@@ -4,12 +4,12 @@ import "./home.scss"
 const HomePage = () => {
   return (
     <div id="home">
-        <div id="edu-container">
+        <div id="home-container">
             <h1 >
                 Welcome to iskakm.com!
                 <br />
             </h1>
-            <div className="my-images"/>
+            <div id="my-images"/>
                  
         </div> 
     </div>

@@ -2,10 +2,58 @@ $titles-color: rgb(71, 71, 245);
 $background-color: rgb(247, 240, 240);
 $discription-color: rgb(34, 22, 22);
 
-#edu-container {
-  margin: 5em;
-  background-color: $background-color;
+#education {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(253, 173, 173);
+
   h1 {
-    color: $discription-color;
+    padding: 50px 0;
+    margin: 0;
+    color: #c90505;
+    text-align: center;
+    font-family: Optima, sans-serif;
+  }
+
+  .timelineSectionDiv h3,
+  .timelineSectionDiv h4,
+  .timelineSectionDiv p {
+    color: #404040;
+  }
+
+  .timelineCardDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-icon {
+    border-radius: 50px;
+    background-color: #fff;
+  }
+
+  .iconImgSBU {
+    border-radius: 50px 50px 10px 10px;
+  }
+}
+
+/* EXPERIENCE SECTION -- MEDIA QUERIES */
+
+/* hacky solution to get date text color to flip to light gray when the timeline breaks open at large screens and date jumps onto the dark gray background  */
+@media (min-width: 1170px) {
+  .timelineSectionDiv {
+    color: #d9d9d9;
+  }
+}
+
+@media (max-width: 660px) {
+  #education {
+    .timelineSectionDiv h3,
+    .timelineSectionDiv a {
+      font-size: 0.875rem;
+    }
+
+    .timelineSectionDiv h4 {
+      font-size: 0.75rem;
+    }
   }
 }
