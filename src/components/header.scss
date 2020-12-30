@@ -1,5 +1,5 @@
-$nav-background-color: rgb(40, 43, 49);
-$links-color: rgb(227, 248, 225);
+$nav-background-color: rgba(37, 39, 29, 0.97);
+$links-color: rgb(201, 227, 240);
 $logo-color: rgb(148, 230, 94);
 $logo-shaddow-color: rgb(167, 189, 118);
 
@@ -11,7 +11,11 @@ $logo-shaddow-color: rgb(167, 189, 118);
   width: 100%;
   top: 0;
   height: 10%;
-  background-color: $nav-background-color;
+  background: linear-gradient(
+    to bottom,
+    rgb(132, 149, 156) 0%,
+    $nav-background-color 100%
+  );
   #burger {
     display: none;
   }
@@ -29,12 +33,16 @@ $logo-shaddow-color: rgb(167, 189, 118);
     margin: 3em 1em;
     button {
       color: $links-color;
+      font-family: FreeMono, monospace;
+      font-size: 1em;
+      font-weight: 600;
       background: transparent;
       border: transparent;
       margin: 0em 1em;
     }
     button:hover {
-      color: blue;
+      color: rgb(172, 172, 136);
+      cursor: pointer;
     }
     button:focus {
       outline: none;

@@ -8,9 +8,9 @@ const Footer = () => {
 
 
 	return (
-		<footer id="footer">
+		<footer className="footer-links" id="footer">
 
-			<div className="footer-links">
+			{/* <div > */}
 				<a href="mailto: ayzik55@gmail.com">
 					<FontAwesomeIcon icon={faEnvelope} />
 				</a>
@@ -23,7 +23,7 @@ const Footer = () => {
 				<a href="https://twitter.com/iskak" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon icon={faTwitter} />
 				</a>
-			</div>
+			{/* </div> */}
 		</footer>
 	);
 };

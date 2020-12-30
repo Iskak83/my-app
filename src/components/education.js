@@ -7,15 +7,16 @@ import './education.scss';
 const Education = () => {
 	return (
 		<div className="timeline-section-container" id="education">
-			<h1 className="section-head">-- EDUCATION --</h1>
-
+			<div className="paragraph-title-edu">
+				<img src={require('../images/education.jpg')} className="paragraph-title-edu" alt=''/>
+			</div>
 			<VerticalTimeline>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					contentStyle={styles_.card}
 					contentArrowStyle={styles_.cardArrow}
 					date="March 2020 - July 2020"
-          icon={<img src={require('../images/fsa.png')} className="image-icon" alt="" />}
+					icon={<img src={require('../images/fsa.png')} className="image-icon" alt="" />}
           
 				>
 					<h3 className="vertical-timeline-element-title">Fullstack Academy of Code</h3>
@@ -45,7 +46,7 @@ const Education = () => {
 							</a>
 					
 				</VerticalTimelineElement>
-				{/* Emtec Consulting Engineers ---------------------------------------- */}
+				
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					contentStyle={styles_.card}
@@ -57,7 +58,7 @@ const Education = () => {
 					<h4 className="vertical-timeline-element-subtitle">Ronkonkoma, NY</h4>
 					<p>Mechanical Inspector</p>
 				</VerticalTimelineElement>
-				{/* STONY BROOK --------------------------------------------------------- */}
+				
 				
 				<VerticalTimelineElement
 					icon={<img src={require('../images/KEU.png')} className="image-icon" alt="" />}

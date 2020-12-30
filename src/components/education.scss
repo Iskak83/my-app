@@ -1,11 +1,24 @@
-$titles-color: rgb(71, 71, 245);
+$title-color: rgb(202, 212, 143);
 $background-color: rgb(247, 240, 240);
 $discription-color: rgb(34, 22, 22);
 
 #education {
-  margin: 0 auto;
+  margin: 5em auto;
   width: 100%;
-  background-color: rgb(253, 173, 173);
+  // background-color: rgb(19, 13, 13);
+  .paragraph-title-edu {
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+    img {
+      color: red;
+      height: 100px;
+      width: 10%;
+    }
+  }
 
   h1 {
     padding: 50px 0;
