@@ -3,70 +3,80 @@ $background-color: rgb(247, 240, 240);
 $discription-color: rgb(34, 22, 22);
 
 #education {
-  margin: 5em auto;
-  width: 100%;
-  // background-color: rgb(19, 13, 13);
+  padding: 7em 0;
+
   .paragraph-title-edu {
-    margin: 5em auto;
+    margin: 0 0 3em 0;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 120px;
     width: 100%;
 
     img {
       color: red;
-      height: 100px;
-      width: 10%;
+      height: 120px;
+      width: 13%;
     }
   }
 
-  h1 {
-    padding: 50px 0;
-    margin: 0;
-    color: #c90505;
-    text-align: center;
-    font-family: Optima, sans-serif;
-  }
+  .timeline-container {
+    width: 80%;
 
-  .timelineSectionDiv h3,
-  .timelineSectionDiv h4,
-  .timelineSectionDiv p {
-    color: #404040;
-  }
+    .vertical-timeline-element-date {
+      color: white;
+    }
 
-  .timelineCardDiv {
-    display: flex;
-    justify-content: space-between;
-  }
+    h3,
+    h4,
+    p {
+      color: #404040;
+    }
 
-  .image-icon {
-    border-radius: 50px;
-    background-color: #fff;
-  }
+    .image-icon {
+      border-radius: 50px;
+    }
 
-  .iconImgSBU {
-    border-radius: 50px 50px 10px 10px;
+    .iconImgSBU {
+      border-radius: 50px 50px 10px 10px;
+    }
   }
 }
 
-/* EXPERIENCE SECTION -- MEDIA QUERIES */
-
-/* hacky solution to get date text color to flip to light gray when the timeline breaks open at large screens and date jumps onto the dark gray background  */
-@media (min-width: 1170px) {
-  .timelineSectionDiv {
-    color: #d9d9d9;
+@media (max-width: 1170px) {
+  #education {
+    .timeline-container {
+      width: 90%;
+      .vertical-timeline-element-date {
+        color: rgb(5, 0, 0);
+        font-weight: 600;
+      }
+    }
   }
 }
 
 @media (max-width: 660px) {
   #education {
-    .timelineSectionDiv h3,
-    .timelineSectionDiv a {
-      font-size: 0.875rem;
+    .timeline-container {
+      width: 90%;
+      .vertical-timeline-element-date {
+        color: rgb(5, 0, 0);
+        font-weight: 600;
+      }
+      h3,
+      a {
+        font-size: 0.8em;
+      }
+      h4 {
+        font-size: 0.9em;
+      }
     }
 
-    .timelineSectionDiv h4 {
-      font-size: 0.75rem;
+    .paragraph-title-edu {
+      img {
+        color: red;
+        height: 100px;
+        width: 25%;
+      }
     }
   }
 }

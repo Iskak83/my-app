@@ -1,69 +1,81 @@
 import * as React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
 import './education.scss';
+const {education} = require('./data')
 
 const Education = () => {
+
+	
 	return (
-		<div className="timeline-section-container" id="education">
+		<div  id="education">
 			<div className="paragraph-title-edu">
 				<img src={require('../images/education.jpg')} className="paragraph-title-edu" alt=''/>
 			</div>
-			<VerticalTimeline>
+			<VerticalTimeline className="timeline-container">
+			
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					contentStyle={styles_.card}
-					contentArrowStyle={styles_.cardArrow}
-					date="March 2020 - July 2020"
-					icon={<img src={require('../images/fsa.png')} className="image-icon" alt="" />}
+					contentStyle={styles['card']}
+					contentArrowStyle={styles['card-arrow']}
+					date={education.part1.date}
+					icon={<img src={require('../images/fsa.jpg')} className="image-icon" alt="" />}
           
 				>
-					<h3 className="vertical-timeline-element-title">Fullstack Academy of Code</h3>
-					<h4 className="vertical-timeline-element-subtitle">New York, NY</h4>
+					<h3 className="vertical-timeline-element-title">{education.part1.name}</h3>
+					<h4 className="vertical-timeline-element-subtitle">{education.part1.address}</h4>
 					<p>
-						Certificate in Full Stack Web Development, <strong>Software Engineering</strong>
+						{education.part1.degree}
 					</p>
 				</VerticalTimelineElement>
 		
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					contentStyle={styles_.card}
-					contentArrowStyle={styles_.cardArrow}
-					date="August 2017 - July 2020"
-					icon={<img src={require('../images/trader.png')} className="image-icon" alt="" />}
+					contentStyle={styles['card']}
+					contentArrowStyle={styles['card-arrow']}
+					date={education.part2.date}
+					icon={<img src={require('../images/krsu.jpg')} className="image-icon" alt="" />}
+          
 				>
-				
-							<h3 className="vertical-timeline-element-title">Acme Smoked Fish Corp.</h3>
-							<h4 className="vertical-timeline-element-subtitle">Brooklyn, NY</h4>
-							<p>Plant Engineer | Maintenance Manager</p>
-							<a
-								href="https://drive.google.com/file/d/11gUI3s0iBRkWkc5GZKaUOcLbCCHtwNtc/view?usp=sharing"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Letter of Recommendation
-							</a>
+					<h3 className="vertical-timeline-element-title">{education.part2.name}</h3>
+					<h4 className="vertical-timeline-element-subtitle">{education.part2.address}</h4>
+					<p>
+						{education.part2.degree}
+					</p>
+						
 					
 				</VerticalTimelineElement>
 				
 				<VerticalTimelineElement
-					className="vertical-timeline-element--work"
-					contentStyle={styles_.card}
-					contentArrowStyle={styles_.cardArrow}
-					date="November 2015 - July 2017"
-					icon={<img src={require('../images/krsu.png')} className="image-icon" alt="" />}
-				>
-					<h3 className="vertical-timeline-element-title">Emtec Consulting Engineers</h3>
-					<h4 className="vertical-timeline-element-subtitle">Ronkonkoma, NY</h4>
-					<p>Mechanical Inspector</p>
+				className="vertical-timeline-element--work"
+				contentStyle={styles['card']}
+				contentArrowStyle={styles['card-arrow']}
+				date={education.part3.date}
+				icon={<img src={require('../images/knu.jpg')} className="image-icon" alt="" />}
+	  
+			>
+				<h3 className="vertical-timeline-element-title">{education.part3.name}</h3>
+				<h4 className="vertical-timeline-element-subtitle">{education.part3.address}</h4>
+				<p>
+					{education.part3.degree}
+				</p>
 				</VerticalTimelineElement>
 				
 				
 				<VerticalTimelineElement
-					icon={<img src={require('../images/KEU.png')} className="image-icon" alt="" />}
-					iconStyle={styles_.icon}
-				/>
+				className="vertical-timeline-element--work"
+				contentStyle={styles['card']}
+				contentArrowStyle={styles['card-arrow']}
+				date={education.part4.date}
+				icon={<img src={require('../images/KEU.jpg')} className="image-icon" alt="" />}
+	  
+			>
+				<h3 className="vertical-timeline-element-title">{education.part4.name}</h3>
+				<h4 className="vertical-timeline-element-subtitle">{education.part4.address}</h4>
+				<p>
+					{education.part4.degree}
+				</p>
+				</VerticalTimelineElement>
 			</VerticalTimeline>
 		</div>
 	);
@@ -71,16 +83,16 @@ const Education = () => {
 
 export default Education
 
-const styles_ = {
-	card: {
-		background: '#d9d9d9',
-		fontFamily: 'Saira',
-		borderRadius: '20px'
+const styles = {
+	'card': {
+		background: 'rgb(247, 240, 240)',
+		fontFamily: 'monospace',
+		borderRadius: '18px'
 	},
-	cardArrow: {
-		borderRight: '7px solid  #d9d9d9'
+	'card-arrow': {
+		borderRight: '1px solid  #rgb(247, 240, 240)'
 	},
-	icon: {
+	'icon': {
 		background: '#fff'
 	}
 };

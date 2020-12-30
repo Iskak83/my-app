@@ -1,6 +1,6 @@
 import * as React from "react"
 import "./home.scss"
-const data = require('./data')
+const {myStory} = require('./data')
 
 const HomePage = () => {
   return (
@@ -13,13 +13,13 @@ const HomePage = () => {
         <div id="home-container">
           <div id="my-images"/>
           <div id="my-story">
-            <p>{data.myStory.part1}</p>
+            <p>{myStory.part1}</p>
             <br />
-            <p>{data.myStory.part2}</p>
+            <p>{myStory.part2}</p>
             <br />
-            <p>{data.myStory.part3}</p>
+            <p>{myStory.part3}</p>
             <br />
-            <p>{data.myStory.part4}</p>
+            <p>{myStory.part4}</p>
           </div>       
         </div> 
     </div>
