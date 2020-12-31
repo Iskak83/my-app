@@ -1,5 +1,5 @@
-$nav-background-color: rgba(231, 240, 240, 0.97);
-$links-color: rgb(38, 36, 36);
+$nav-background-color: rgba(105, 107, 107, 0.97);
+$links-color: rgb(200, 205, 209);
 $logo-color: rgb(28, 76, 92);
 $logo-shaddow-color: rgb(167, 189, 118);
 
@@ -10,10 +10,10 @@ $logo-shaddow-color: rgb(167, 189, 118);
   z-index: 100;
   width: 100%;
   top: 0;
-  height: 12%;
+  height: 10%;
   background: linear-gradient(
     to bottom,
-    rgb(196, 201, 195) 0%,
+    rgb(46, 56, 45) 0%,
     $nav-background-color 100%
   );
   #burger {
@@ -32,7 +32,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
     width: 40px;
     height: 40px;
     padding: 5px;
-    margin: 0.5em 0em 0em 1em;
+    margin: 0.3em 0em 0em 1em;
     border-radius: 50%;
     float: left;
     border: solid 1.5px rgb(158, 161, 155);
@@ -40,18 +40,18 @@ $logo-shaddow-color: rgb(167, 189, 118);
   }
   #nav-links {
     float: right;
-    margin: 3em 1em;
+    margin: 2.5em 1em;
     button {
       color: $links-color;
       font-family: FreeMono, monospace;
-      font-size: 1.15em;
-      font-weight: 600;
+      font-size: 1.1em;
+      font-weight: 100;
       background: transparent;
       border: transparent;
       margin: 0em 1em;
     }
     button:hover {
-      color: rgb(69, 90, 94);
+      color: rgb(111, 136, 141);
       cursor: pointer;
     }
     button:focus {
