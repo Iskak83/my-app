@@ -32,8 +32,27 @@ $discription-color: rgb(34, 22, 22);
       color: #404040;
     }
 
-    .image-icon {
+    .image-fsa,
+    .image-krsu,
+    .image-knu,
+    .image-keu {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50px;
+    }
+    .image-fsa {
+      background-image: url('../images/fsa.jpg');
+    }
+    .image-krsu {
+      background-image: url('../images/krsu.jpg');
+    }
+    .image-knu {
+      background-image: url('../images/knu.jpg');
+    }
+    .image-keu {
+      background-image: url('../images/KEU.jpg');
     }
 
     .iconImgSBU {

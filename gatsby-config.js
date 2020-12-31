@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Iskak Mantyubetov`,
+    title: `Portfolio`,
 		description: `Portfolio Site`,
 		author: `Iskak Mantyubetov`,
   },
@@ -33,7 +33,7 @@ module.exports = {
 				background_color: `#663399`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				icon: `src/images/coding-job.png`
+				icon: `src/images/my-logo.png`
 			}
     },
     "gatsby-plugin-smoothscroll"

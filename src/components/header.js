@@ -7,7 +7,7 @@ export default function Header() {
   return (
   <div id="nav-bar">
     <div id="burger">burger</div>
-    <h1 id="logo">IM</h1>
+    <div id="logo">im</div>
     <div id="nav-links"> 
      
 							<button onClick={() => scrollTo('#home')}>Home</button>
