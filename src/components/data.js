@@ -49,7 +49,7 @@ const data = {
             date: "September 2006 - July 2011",
             degree: "Economics | Accounting",
             class: "image-krsu",
-            id: 1
+            id: 2
         },
        {
             name: "Kyrgyz National University",
@@ -82,7 +82,8 @@ const data = {
             gitHub: 'https://github.com/Mixifyer/Mixifyer',
             link: "https://mixifyer.herokuapp.com",
             class: "image-mixifyer",
-            id: 1
+            id: 1,
+         
 
         },
         {
@@ -98,7 +99,8 @@ const data = {
             gitHub: 'https://github.com/Iskak83/eBudget',
             link: "https://ebudget-fsa2020.herokuapp.com",
             class: "image-eBudget",
-            id: 2
+            id: 2,
+           
 
         },
         {
@@ -114,7 +116,8 @@ const data = {
             gitHub: 'https://github.com/Iskak83/ColourFinder',
             link: "https://expo.io/@iskak/projects/colour-finder",
             class: "image-colourFinder",
-            id: 3
+            id: 3,
+            
 
 
         },

@@ -2,19 +2,25 @@ import * as React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faAngleDown, faAngleUp, faLink } from '@fortawesome/free-solid-svg-icons';
+import useScrollPosition from '@react-hook/window-scroll';
 import './projects.scss';
 const {projects} = require('./data')
 
 const Projects = () => {
+  const scrollTop = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  const scrollY = useScrollPosition(60);
+
   return (
     
       <div id="projects">
-        <img src={require("../images/project.png")} alt="" class="project-img"/>
+        <img src={require("../images/project.png")} alt="" className="project-img"/>
 
-        {projects.map( el => (
-        <div id="project-container">
+        {projects.map( (el, inx) => (
+        <div id="project-container" key={inx}>
           <div className="connecter-arrow"></div>
-          <div className='project-container'>
+          <div id={scrollY > 1020+(inx/2.5*1000) && scrollY < 2050+(inx/2.5*1000) ? el.class : "project-hiden"}>
             <div className={el.class}/>
             
               <div className="project-details">
