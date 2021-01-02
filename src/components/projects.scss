@@ -1,0 +1,100 @@
+$background-color: rgb(187, 220, 238);
+$title-color: rgb(202, 212, 143);
+$sizes: 0% 0, 5% 1, 18% 1, 24% 0, 25% 0 true;
+$images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
+  '../images/nitto-final.jpg' 50%, '../images/virtual-grad.jpg' 75%;
+
+@keyframes fadeInOut {
+  @each $image, $add-percantage in $images {
+    @each $percentage, $opacity, $no-image in $sizes {
+      #{$percentage + $add-percantage} {
+        opacity: $opacity;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @if $no-image == null {
+          background-image: url($image);
+        }
+      }
+    }
+  }
+}
+
+#projects,
+#project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 8% 0 0 0;
+  .project-img {
+    height: 100px;
+    width: 170px;
+    padding: 2em 0 0 0;
+  }
+
+  #project-container {
+    padding: 0;
+    .connecter-arrow {
+      //   border: solid 5px white;
+      height: 3em;
+      width: 0;
+    }
+
+    .project-container {
+      background-color: rgb(254, 249, 249);
+      border-radius: 20px;
+      width: 80%;
+
+      padding: 5%;
+      //   padding: 45px 45px 50px;
+      font-family: monospace;
+      font-size: 1.3em;
+      //   text-indent: 35px;
+      letter-spacing: 0.3px;
+      line-height: 2;
+      word-spacing: 1px;
+      text-align: justify;
+
+      .image-mixifyer,
+      .image-eBudget,
+      .image-colourFinder {
+        float: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px rgb(206, 205, 205);
+      }
+      .image-mixifyer {
+        background-image: url('../images/Mixifyer.jpg');
+      }
+      .image-eBudget {
+        background-image: url('../images/eBudget.jpg');
+      }
+      .image-colourFinder {
+        background-image: url('../images/Colourfinder.jpg');
+      }
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  #projects {
+    margin: 0% 5%;
+  }
+}
+
+@media (max-width: 660px) {
+  #projets {
+    width: 100%;
+    margin: 5em 0%;
+    // padding: 0 0;
+    #projects-container {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+}

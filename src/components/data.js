@@ -71,35 +71,54 @@ const data = {
     projects: [
         {
             name: "Mixifyer",
-            img: "../images/mixifyer.jpg",
+            img: "../images/Mixifyer.jpg",
             date: "October 2020 - November 2020",
-            description: "E-commerce application that allows users to create their own account, add their favorite drinks to the shopping cart, edit their shopping cart, and place the order using credit card payment.",
-            tools: "Express, PostgreSQL, React, Redux, React-Redux and Stripe API",
+            description: "E-commerce application that allows users to create their own account, add their favorite drinks to thevshopping cart, edit their shopping cart, and place the order using credit card payment.",
+            bulletPoints: {
+                one: "-Designed and implemented a persistent user’s shopping cart page to see the items in the cart and to change quantities and delete them from the cart anytime.",
+                two: "-Created and implemented an Admin-user page with functionality to have access to all users’ information, to add or remove inventory, or to change inventory information, such as cost, in stock etc."
+            },
+            tools: "['Express', 'PostgreSQL', 'React','Redux', 'React-Redux', 'Stripe API']",
             gitHub: 'https://github.com/Mixifyer/Mixifyer',
-            link: "https://mixifyer.herokuapp.com/"
+            link: "https://mixifyer.herokuapp.com",
+            class: "image-mixifyer",
+            id: 1
 
         },
         {
             name: "eBudget",
             img: "../images/eBudget.jpg",
             date: "October 2020 - November 2020",
-            description: "E-commerce application that allows users to create their own account, add their favorite drinks to the shopping cart, edit their shopping cart, and place the order using credit card payment.",
-            tools: "Express, PostgreSQL, React, Redux, React-Redux, ChartJS and Plaid API",
+            description: "Financial planning web application to create a personal  budget.",
+            bulletPoints: {
+                one: "-Built functionality to establish a persistent connection to the user's bank account through Plaid API and to fetch the user’s bank account activity including transfers, payments and spending.",
+                two: "-Incorporated doughnut and bar charts functionality to display monthly and yearly spending using Chart.js."
+            },
+            tools: "['Express', 'PostgreSQL', 'React', 'Redux', 'React-Redux', 'ChartJS', 'Plaid API']",
             gitHub: 'https://github.com/Iskak83/eBudget',
-            link: "https://ebudget.herokuapp.com/"
+            link: "https://ebudget-fsa2020.herokuapp.com",
+            class: "image-eBudget",
+            id: 2
 
         },
         {
             name: "ColourFinder",
             img: "../images/ColourFinder.jpg",
             date: "October 2020 - November 2020",
-            description: "E-commerce application that allows users to create their own account, add their favorite drinks to the shopping cart, edit their shopping cart, and place the order using credit card payment.",
-            tools: "React-Native and Clariffi API",
+            description: "It is an app to identify the name and hex code of colors from the selected picture from your device's local storage or taking a picture using device's camera.",
+            bulletPoints: {
+                one: "",
+                two: ""
+            },
+            tools: "['React-Native', 'Clariffi API']",
             gitHub: 'https://github.com/Iskak83/ColourFinder',
-            link: ""
+            link: "https://expo.io/@iskak/projects/colour-finder",
+            class: "image-colourFinder",
+            id: 3
+
 
         },
     ]
 }
 
-module.exports = {myStory : data.myStory, education: data.education}
+module.exports = {myStory : data.myStory, education: data.education, projects: data.projects}
