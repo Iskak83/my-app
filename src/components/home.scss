@@ -1,80 +1,31 @@
-$background-color: rgb(187, 220, 238);
-$title-color: rgb(202, 212, 143);
-$sizes: 0% 0, 5% 1, 18% 1, 24% 0, 25% 0 true;
-$images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
-  '../images/nitto-final.jpg' 50%, '../images/virtual-grad.jpg' 75%;
-
-@keyframes fadeInOut {
-  @each $image, $add-percantage in $images {
-    @each $percentage, $opacity, $no-image in $sizes {
-      #{$percentage + $add-percantage} {
-        opacity: $opacity;
-        background-size: cover;
-        background-repeat: no-repeat;
-        @if $no-image == null {
-          background-image: url($image);
-        }
-      }
-    }
-  }
-}
-
 #home {
+  height: 600px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/home-page.jpg');
   margin: 0% 10%;
-  padding: 8% 0 0 0;
-  .paragraph-title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 0 3%;
-    h1 {
-      font-family: FreeMono, monospace;
-      color: $title-color;
-    }
-    h3 {
-      color: $title-color;
-      margin: 9px 10px 0 10px;
-      height: 40px;
-    }
-  }
-  #home-container {
-    background-color: rgb(254, 249, 249);
-    border-radius: 20px;
-
-    #my-images {
-      float: left;
-      height: 300px;
-      width: 400px;
-      margin: 45px;
-      border-radius: 300px;
-      box-shadow: 5px 5px 3px rgb(206, 205, 205);
-      animation: fadeInOut 28s infinite ease-in-out;
-    }
-    #my-story {
-      padding: 45px 45px 50px;
-      font-family: monospace;
-      font-size: 1.3em;
-      text-indent: 50px;
-      letter-spacing: 0.3px;
-      line-height: 2;
-      word-spacing: 1px;
-      text-align: justify;
-    }
+  font-size: 1.9em;
+  font-family: Andale Mono, monospace;
+  color: rgb(213, 213, 192);
+  text-align: center;
+  h2 {
+    margin: 12% 0 4%;
   }
 }
 
 @media (min-width: 1170px) {
-  .timelineSectionDiv {
-    color: #d9d9d9;
-  }
 }
 
 @media (max-width: 660px) {
   #home {
     width: 100%;
-    margin: 5em 0%;
+    height: 350px;
+    margin: 2em 0;
     // padding: 0 0;
-    #home-container {
+    #bio-container {
       width: 90%;
       margin: 0 5%;
       #my-images {

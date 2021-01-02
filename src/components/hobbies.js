@@ -11,9 +11,9 @@ const {myStory} = require('./data')
             <h1>Hobby</h1>
             <h3>{"  >>>"}</h3>
           </div>
-          <div id="home-container">
-            <div id="my-images"/>
-            <div id="my-story">
+          <div id="hobby-container">
+            <div id="hobby-images"/>
+            <div id="hobby-story">
               <p>{myStory.part1}</p>
               <br />
               <p>{myStory.part2}</p>

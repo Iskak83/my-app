@@ -6,7 +6,6 @@ $logo-shaddow-color: rgb(167, 189, 118);
 #nav-bar {
   overflow: hidden;
   position: fixed;
-  align-content: center;
   z-index: 100;
   width: 100%;
   top: 0;
@@ -20,23 +19,37 @@ $logo-shaddow-color: rgb(167, 189, 118);
     display: none;
   }
   #logo {
-    background: linear-gradient(
-      to bottom,
-      rgba(207, 241, 241, 0.5) 0%,
-      rgba(90, 182, 159, 0.5) 80%
-    );
+    // background: linear-gradient(
+    //   to bottom,
+    //   rgba(207, 241, 241, 0.5) 0%,
+    //   rgba(90, 182, 159, 0.5) 80%
+    // );
     // url('../images/my-logo.jpg');
     text-align: center;
-    font-size: 30px;
+    font-size: 55px;
     font-family: Georgia, serif;
     width: 38px;
     height: 38px;
-    padding: 2px 4px 4px 4px;
-    margin: 0.4em 0em 0em 1em;
+    padding: 0px 0px;
+    margin: 0em 0em 0em 1em;
     border-radius: 50%;
     float: left;
     border: solid 1.5px rgb(158, 161, 155);
     color: $logo-color;
+    transform: skew(-15deg);
+  }
+  #divider {
+    float: left;
+    position: relative;
+    left: -2%;
+    // margin: 0 0px;
+    height: 100%;
+    width: 20%;
+    border-right: 8px solid rgb(115, 117, 106);
+
+    background-color: rgb(158, 158, 135);
+
+    transform: skew(15deg);
   }
   #nav-links {
     float: right;
@@ -66,8 +79,8 @@ $logo-shaddow-color: rgb(167, 189, 118);
   #nav-bar {
     #burger {
       display: block;
-      float: right;
-      margin: 2em;
+      // float: right;
+      // margin: 2em;
     }
     #logo {
       font-size: 25px;
