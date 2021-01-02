@@ -57,8 +57,8 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
       background-color: rgb(254, 249, 249);
       border-radius: 20px;
       width: 80%;
-      left: 0%;
-      transition: 0.7s ease-in-out;
+      opacity: 1;
+      transition: 1.5s ease-in-out;
       padding: 5%;
       font-family: monospace;
       font-size: 1.3em;
@@ -91,8 +91,8 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
       }
     }
     #project-hiden {
-      left: -100%;
-      transition: 5s ease-in-out;
+      opacity: 0;
+      transition: 3s ease-in-out;
     }
   }
 }

@@ -1,15 +1,13 @@
 import * as React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
-import { faAngleDown, faAngleUp, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import useScrollPosition from '@react-hook/window-scroll';
 import './projects.scss';
 const {projects} = require('./data')
 
 const Projects = () => {
-  const scrollTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  
   const scrollY = useScrollPosition(60);
 
   return (
