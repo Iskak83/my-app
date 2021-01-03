@@ -15,14 +15,17 @@
     ),
     url('../images/home-page.jpg');
   margin: 0% 10%;
-  font-size: 1.9em;
+  font-size: 1.6em;
   font-weight: 100;
-  //   font-family: Andale Mono, monospace;
-  font-family: monospace;
+  font-family: Andale Mono, monospace;
+  letter-spacing: 0.3px;
+  line-height: 2;
+  word-spacing: 1px;
   color: rgb(226, 228, 222);
   text-align: center;
   h2 {
-    margin: 12% 0 4%;
+    font-size: 1.8em;
+    margin: 12% 0 0;
     font-weight: 100;
   }
 }
