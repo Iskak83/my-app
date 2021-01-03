@@ -1,32 +1,5 @@
 $background-color: rgb(187, 220, 238);
 $title-color: rgb(202, 212, 143);
-$sizes: 0% 0, 5% 1, 18% 1, 24% 0, 25% 0 true;
-$images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
-  '../images/nitto-final.jpg' 50%, '../images/virtual-grad.jpg' 75%;
-
-@keyframes example {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-@keyframes fadeInOut {
-  @each $image, $add-percantage in $images {
-    @each $percentage, $opacity, $no-image in $sizes {
-      #{$percentage + $add-percantage} {
-        opacity: $opacity;
-        background-size: cover;
-        background-repeat: no-repeat;
-        @if $no-image == null {
-          background-image: url($image);
-        }
-      }
-    }
-  }
-}
 
 #projects,
 #project-container {

@@ -5,14 +5,25 @@
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../images/home-page.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(250, 252, 252, 0.35),
+      rgba(19, 16, 16, 0),
+      rgba(19, 16, 16, 0),
+      rgba(19, 16, 16, 0),
+      rgba(219, 213, 213, 0.4)
+    ),
+    url('../images/home-page.jpg');
   margin: 0% 10%;
   font-size: 1.9em;
-  font-family: Andale Mono, monospace;
-  color: rgb(213, 213, 192);
+  font-weight: 100;
+  //   font-family: Andale Mono, monospace;
+  font-family: Comic Sans MS, Comic Sans, sans-serif;
+  color: rgb(226, 228, 222);
   text-align: center;
   h2 {
     margin: 12% 0 4%;
+    font-weight: 100;
   }
 }
 

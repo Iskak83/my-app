@@ -9,7 +9,7 @@ const Home = () => {
         	<h2>Iskak Mantyubetov</h2>
             <Typewriter
                 options={{
-                    strings: ['Software Engineer', 'Hiker', 'Cook'],
+                    strings: ['Software Engineer', 'Hiker', 'Cook', 'Pet lover', 'Tennis fan'],
                     autoStart: true,
                     loop: true
                 }}
