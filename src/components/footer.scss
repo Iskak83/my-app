@@ -30,8 +30,14 @@ $logo-shaddow-color: rgb(217, 248, 149);
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 750px) {
   .footer-links {
-    font-size: 2.5rem;
+    a {
+      .svg-inline--fa {
+        margin: 0;
+        height: 0.7em;
+        width: 0.7em;
+      }
+    }
   }
 }

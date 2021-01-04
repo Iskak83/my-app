@@ -28,7 +28,7 @@ $title-color: rgb(202, 212, 143);
       position: relative;
       background-color: rgb(254, 249, 249);
       border-radius: 20px;
-      width: 80%;
+      width: 70%;
       opacity: 1;
       transition: 2s ease-in-out;
       padding: 5%;
@@ -66,12 +66,6 @@ $title-color: rgb(202, 212, 143);
       opacity: 0;
       transition: 3s ease-in-out;
     }
-  }
-}
-
-@media (min-width: 1250px) {
-  #projects {
-    margin: 0% 5%;
   }
 }
 

@@ -20,8 +20,9 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
 }
 
 #hobby {
-  margin: 0% 10% 10%;
+  margin: 10% 0;
   padding: 8% 0 0 0;
+  // width: 100%;
   .paragraph-title {
     display: flex;
     justify-content: center;
@@ -38,6 +39,8 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
     }
   }
   #hobby-container {
+    width: 80%;
+    margin: 0 10%;
     background-color: rgb(254, 249, 249);
     border-radius: 20px;
 
@@ -63,17 +66,11 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
   }
 }
 
-@media (min-width: 1170px) {
-}
-
 @media (max-width: 660px) {
-  #hobbie {
-    width: 100%;
-    margin: 5em 0%;
-    // padding: 0 0;
-    #hobbie-container {
-      width: 90%;
-      margin: 0 5%;
+  #hobby {
+    #hobby-container {
+      width: 95%;
+      margin: 0 2.5%;
       #hobby-images {
         height: 250px;
         width: 90%;
