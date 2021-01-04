@@ -7,8 +7,12 @@ export default function Header() {
   return (
   <div id="nav-bar">
     <div id="divider">
-    <div id="burger">burger</div>
-    <div id="logo">im</div>
+      <div id="burger">
+        <div id="lineOne"></div>
+        <div id="lineTwo"></div>
+        <div id="lineThree"></div>
+      </div>
+      <div id="logo">im</div>
     </div>
     <div id="nav-links"> 
      

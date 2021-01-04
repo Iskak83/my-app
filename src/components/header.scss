@@ -15,8 +15,32 @@ $logo-shaddow-color: rgb(167, 189, 118);
     rgb(46, 56, 45) 0%,
     $nav-background-color 100%
   );
+  #divider {
+    float: left;
+    position: relative;
+    left: -5%;
+    height: 100%;
+    width: 40%;
+    border-right: 8px solid rgb(81, 83, 74);
+    background-color: rgb(94, 94, 84);
+    transform: skew(40deg);
+  }
   #burger {
     display: none;
+    transform: skew(-20deg);
+    width: 30px;
+    height: 20px;
+    margin: 0 0 0 35px;
+    #lineOne,
+    #lineTwo,
+    #lineThree {
+      width: 100%;
+      height: 1px;
+      background-color: rgb(226, 199, 199);
+    }
+    #lineTwo {
+      width: 70%;
+    }
   }
   #logo {
     background: linear-gradient(
@@ -24,34 +48,20 @@ $logo-shaddow-color: rgb(167, 189, 118);
       rgba(207, 241, 241, 0.5) 0%,
       rgba(90, 182, 159, 0.5) 80%
     );
-    // url('../images/my-logo.jpg');
     text-align: center;
     font-size: 50px;
-
     font-family: Georgia, serif;
     width: 73px;
     height: 70px;
     padding: 4px 0 0;
-    margin: 0em 0em 0em 1em;
+    margin: 0em 0em 0em 1.9em;
     border-radius: 47%;
     float: left;
     border: solid 1px rgb(120, 133, 108);
     color: $logo-color;
     transform: skew(-40deg);
   }
-  #divider {
-    float: left;
-    position: relative;
-    left: -2%;
-    // margin: 0 0px;
-    height: 100%;
-    width: 35%;
-    border-right: 8px solid rgb(81, 83, 74);
 
-    background-color: rgb(94, 94, 84);
-
-    transform: skew(40deg);
-  }
   #nav-links {
     float: right;
     margin: 2.5em 1em;
@@ -73,23 +83,56 @@ $logo-shaddow-color: rgb(167, 189, 118);
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 770px) {
+  #nav-bar {
+    #logo {
+      margin: 0.25em 1.35em;
+    }
+  }
 }
 
-@media (max-width: 755px) {
+@media (max-width: 650px) {
   #nav-bar {
+    #divider {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      left: -6%;
+      transform: skew(15deg);
+    }
     #burger {
-      display: block;
-      // float: right;
-      // margin: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: skew(-15deg);
     }
     #logo {
-      font-size: 25px;
-      font-family: Georgia, serif;
-      width: 35px;
-      height: 35px;
-      padding: 3.5px;
-      margin: 0.5em 0em 0em 1em;
+      font-size: 43px;
+      color: rgb(226, 199, 199);
+      width: 60px;
+      height: 55px;
+      padding: 0px;
+      background: none;
+      border: transparent;
+      margin: 0em 0em 0em 0.35em;
+      transform: skew(-15deg);
+    }
+    #nav-links {
+      display: none;
+    }
+  }
+}
+@media (max-width: 350px) {
+  #nav-bar {
+    #burger {
+      margin: 0 15px 0 30px;
+      width: 22px;
+      height: 18px;
+    }
+    #logo {
+      font-size: 32px;
+      width: 40px;
+      height: 40px;
     }
     #nav-links {
       display: none;

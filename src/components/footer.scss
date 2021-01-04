@@ -31,12 +31,13 @@ $logo-shaddow-color: rgb(217, 248, 149);
 }
 
 @media (max-width: 750px) {
-  .footer-links {
+  #footer {
     a {
+      margin: 0 0.6em;
+
       .svg-inline--fa {
-        margin: 0;
-        height: 0.7em;
-        width: 0.7em;
+        height: 1.2em;
+        width: 1.2em;
       }
     }
   }

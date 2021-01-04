@@ -21,7 +21,7 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
 
 #hobby {
   margin: 10% 0;
-  padding: 8% 0 0 0;
+  padding: 8% 0 8% 0;
   // width: 100%;
   .paragraph-title {
     display: flex;
@@ -40,7 +40,7 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
   }
   #hobby-container {
     width: 80%;
-    margin: 0 10% 500px;
+    margin: 0 10%;
     background-color: rgb(254, 249, 249);
     border-radius: 20px;
 
@@ -68,9 +68,10 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
 
 @media (max-width: 660px) {
   #hobby {
+    padding: 8% 0 20% 0;
     #hobby-container {
       width: 95%;
-      margin: 0 2.5% 130px;
+      margin: 0 2.5%;
       #hobby-images {
         height: 250px;
         width: 90%;
