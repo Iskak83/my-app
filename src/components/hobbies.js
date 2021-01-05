@@ -1,6 +1,6 @@
 import * as React from "react"
 import './hobbies.scss'
-const {myStory} = require('./data')
+import {myStory} from './data.js'
 
 
   const Hobby = () => {

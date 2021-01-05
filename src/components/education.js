@@ -5,7 +5,6 @@ import './education.scss';
 const {education} = require('./data')
 
 const Education = () => {
-
 	
 	return (
 		<div  id="education">
