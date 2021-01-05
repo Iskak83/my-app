@@ -36,12 +36,12 @@ const Projects = () => {
                   </a>
                 </div>
               
-              <p className="project-description">{el.description}</p>
-              <p>{el.bulletPoints.one}</p>
-              <p>{el.bulletPoints.two}</p>
-              <p>{el.bulletPoints.three}</p>
+              <div className="project-description">{el.description}</div>
+              <div className="project-description">{el.bulletPoints.one}</div>
+              <div className="project-description">{el.bulletPoints.two}</div>
+              <div className="project-description">{el.bulletPoints.three}</div>
               
-              <p className="project-tools">stack: {el.tools}</p>
+              <div id="project-tools"><span>stack: </span>{el.tools}</div>
 
             </div>
           </div>

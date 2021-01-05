@@ -24,20 +24,15 @@ $title-color: rgb(202, 212, 143);
     #colourFinder {
       position: relative;
       font-family: monospace;
-      font-size: 1.3em;
-      letter-spacing: 0.3px;
-      line-height: 2;
-      word-spacing: 1px;
-      text-align: justify;
       border-bottom: solid 0.5px gray;
 
       #image-mixifyer,
       #image-eBudget,
       #image-colourFinder {
         float: left;
-        background-repeat: no-repeat;
-        background-size: cover;
         border-radius: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
         height: 150px;
         width: 150px;
         margin: 45px 45px 45px 0;
@@ -68,6 +63,13 @@ $title-color: rgb(202, 212, 143);
         margin: 0px 10px;
         font-size: 2em;
       }
+      .project-description {
+        font-size: 1.3em;
+        letter-spacing: 0.3px;
+        line-height: 2;
+        word-spacing: 1px;
+        text-align: justify;
+      }
     }
   }
 }
@@ -81,16 +83,42 @@ $title-color: rgb(202, 212, 143);
       width: 95%;
       margin: 0 2.5%;
       padding: 0 0;
+
       #mixifyer,
       #eBudget,
       #colourFinder {
         margin: 30px;
-      }
-      .project-details {
-        padding: 45px 0;
-        .project-links a {
-          margin: 0px 8px;
-          font-size: 1.5em;
+        #image-mixifyer,
+        #image-eBudget,
+        #image-colourFinder {
+          margin: 0px 20px 4px 0;
+          height: 110px;
+          width: 110px;
+        }
+        .project-details {
+          padding: 0 0 30px;
+          .project-links a {
+            margin: 0px 8px;
+            font-size: 1.5em;
+          }
+          .project-description {
+            margin-top: 10px;
+            font-size: 1.1em;
+            letter-spacing: 0.3px;
+            line-height: 1.4;
+            word-spacing: 0.5px;
+          }
+
+          #project-tools {
+            margin-top: 10px;
+            font-size: 1.1em;
+            letter-spacing: 0.1px;
+            line-height: 1.5;
+            word-spacing: 0.5px;
+            span {
+              font-weight: bold;
+            }
+          }
         }
       }
     }
