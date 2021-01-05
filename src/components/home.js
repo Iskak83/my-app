@@ -6,8 +6,8 @@ import "./home.scss"
 const Home = () => {
   return (
     <div id="home">
-        	<h2>Iskak Mantyubetov</h2>
-          <h4>Full stack software engineer</h4>
+        	<h1>Iskak Mantyubetov</h1>
+          <h3>Full stack software engineer</h3>
           <h6>[‘JavaScript’, ‘React’, ‘Redux’, ‘Express’, ‘Sequelize’, ‘HTML’, ‘CSS’]</h6>
             <Typewriter
                 options={{

@@ -16,22 +16,18 @@
     ),
     url('../images/home-page.jpg');
   margin: 0% 10%;
-  // font-size: 1.5em;
   font-weight: 100;
   font-family: Andale Mono, monospace;
   letter-spacing: 0.3px;
-  line-height: 1.5;
   word-spacing: 1px;
   color: rgb(226, 228, 222);
   text-align: center;
-  h2 {
-    // font-size: 1.8em;
-    margin: 11% 0 0 0;
+  h1 {
+    margin: 10% 0 2% 0;
     font-weight: 100;
   }
   h6 {
-    // font-size: 1em;
-    margin: 0 0 4% 0;
+    margin: 1% 0 4% 0;
   }
   .Typewriter {
     font-size: 1.3em;
@@ -56,10 +52,10 @@
   #home {
     width: 100%;
     height: 270px;
-    margin: 5em 0;
+    margin: 70px 0;
     font-size: 0.6em;
     h6 {
-      font-size: 7px;
+      font-size: 6px;
     }
   }
 }
