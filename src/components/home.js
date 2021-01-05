@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div id="home">
         	<h3>Iskak Mantyubetov</h3>
-          <h6>Full stack software engineer</h6>
+          <h5>Full stack software engineer</h5>
           <p>[‘JavaScript’, ‘React’, ‘Redux’, ‘Express’, ‘Sequelize’, ‘HTML’, ‘CSS’]</p>
             <Typewriter
                 options={{

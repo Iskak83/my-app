@@ -71,7 +71,7 @@ const data = {
     projects: [
         {
             name: "Mixifyer",
-            img: "../images/Mixifyer.jpg",
+            img: "image-mixifyer",
             date: "October 2020 - November 2020",
             description: "Mixifyer is an e-commerce application that allows users to create their own account, add their favorite drinks to their shopping cart, edit their shopping cart, and place their order using credit/debit card payment.",
             bulletPoints: {
@@ -82,14 +82,14 @@ const data = {
             tools: "['Express', 'PostgreSQL', 'Sequelize', 'React','Redux', 'Stripe API']",
             gitHub: 'https://github.com/Mixifyer/Mixifyer',
             link: "https://mixifyer.herokuapp.com",
-            class: "image-mixifyer",
+            class: "mixifyer",
             id: 1,
          
 
         },
         {
             name: "eBudget",
-            img: "../images/eBudget.jpg",
+            img: "image-eBudget",
             date: "October 2020 - November 2020",
             description: "Financial planning web application to create a personal budget. It allows the user to quickly see their spending habits by category, compare spending between months, and set desired spending limits.",
             bulletPoints: {
@@ -100,14 +100,14 @@ const data = {
             tools: "['Express', 'PostgreSQL', 'React', 'Redux', 'React-Redux', 'ChartJS', 'Plaid API']",
             gitHub: 'https://github.com/Iskak83/eBudget',
             link: "https://ebudget-fsa2020.herokuapp.com",
-            class: "image-eBudget",
+            class: "eBudget",
             id: 2,
            
 
         },
         {
             name: "ColourFinder",
-            img: "../images/ColourFinder.jpg",
+            img: "image-colourFinder",
             date: "October 2020 - November 2020",
             description: "ColourFinder is an app to identify the name and hex code of colors from a selected picture from a device's local storage or from a picture taken with the device’s camera. It is an especially helpful tool for designers and developers wanting to capture any color they encounter and use it in their projects.",
             bulletPoints: {
@@ -118,7 +118,7 @@ const data = {
             tools: "['React-Native', 'Clariffi API']",
             gitHub: 'https://github.com/Iskak83/ColourFinder',
             link: "https://expo.io/@iskak/projects/colour-finder",
-            class: "image-colourFinder",
+            class: "colourFinder",
             id: 3,
             
 
