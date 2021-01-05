@@ -6,6 +6,7 @@ import "./home.scss"
 const Home = () => {
   return (
     <div id="home">
+      <div className="home">
         	<h1>Iskak Mantyubetov</h1>
           <h3>Full stack software engineer</h3>
           <h6>[‘JavaScript’, ‘React’, ‘Redux’, ‘Express’, ‘Sequelize’, ‘HTML’, ‘CSS’]</h6>
@@ -16,7 +17,7 @@ const Home = () => {
                     loop: true
                 }}
             />
-						
+				</div>	
     </div>
   )
 }

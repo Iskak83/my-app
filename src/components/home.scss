@@ -1,4 +1,4 @@
-#home {
+.home {
   height: 600px;
   width: 80%;
   display: flex;
@@ -23,7 +23,7 @@
   color: rgb(226, 228, 222);
   text-align: center;
   h1 {
-    margin: 10% 0 2% 0;
+    margin: 12% 0 2% 0;
     font-weight: 100;
   }
   h6 {
@@ -36,9 +36,12 @@
 
 @media (max-width: 1025px) {
   #home {
-    margin: 10%;
-    height: 500px;
-    font-size: 1em;
+    padding-top: 70px;
+    .home {
+      margin: 0 10%;
+      height: 500px;
+      font-size: 1em;
+    }
   }
 }
 @media (max-width: 770px) {
@@ -50,18 +53,21 @@
 
 @media (max-width: 650px) {
   #home {
-    width: 100%;
-    height: 270px;
-    margin: 70px 0;
-    font-size: 0.6em;
-    h1 {
-      margin-top: 8%;
-    }
-    h3 {
-      font-size: 10px;
-    }
-    h6 {
-      font-size: 5px;
+    .home {
+      width: 100%;
+      height: 270px;
+      margin: 0 0;
+      top: 70px;
+      font-size: 0.6em;
+      h1 {
+        margin-top: 8%;
+      }
+      h3 {
+        font-size: 10px;
+      }
+      h6 {
+        font-size: 5px;
+      }
     }
   }
 }
