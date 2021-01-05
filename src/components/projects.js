@@ -19,7 +19,8 @@ const Projects = () => {
         {projects.map( (el, inx) => (
         <div id="project-container" key={inx}>
           <div className="connecter-arrow"></div>
-          <div id={scrolly > 1700+(inx/2.5*1000) && scrolly< 2720+(inx/2.5*1000) ? el.class : "project-hiden"}>
+          <div id={el.class }>
+          {/* <div id={scrolly > 1700+(inx/2.5*1000) && scrolly< 2720+(inx/2.5*1000) ? el.class : "project-hiden"}> */}
           
             <div className={el.class}/>
             

@@ -63,8 +63,13 @@ $logo-shaddow-color: rgb(167, 189, 118);
   }
 
   #nav-links {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
     float: right;
-    margin: 2.5em 1em;
+    margin: -0.5em 1em;
     button {
       color: $links-color;
       font-family: FreeMono, monospace;
