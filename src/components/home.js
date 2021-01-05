@@ -6,10 +6,12 @@ import "./home.scss"
 const Home = () => {
   return (
     <div id="home">
-        	<h2>Iskak Mantyubetov</h2>
+        	<h3>Iskak Mantyubetov</h3>
+          <h6>Full stack software engineer</h6>
+          <p>[‘JavaScript’, ‘React’, ‘Redux’, ‘Express’, ‘Sequelize’, ‘HTML’, ‘CSS’]</p>
             <Typewriter
                 options={{
-                    strings: ['Software Engineer', 'Hiker', 'Cook', 'Pet lover', 'Traveller', 'Tennis fan'],
+                    strings: ['Trilinguist', 'Tennis fan', 'Cook', 'Pet lover', 'Hiker', 'Traveller'],
                     autoStart: true,
                     loop: true
                 }}

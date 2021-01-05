@@ -20,7 +20,7 @@ const Footer = () => {
 				<a href="https://github.com/Iskak83" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon icon={faGithub} />
 				</a>
-				<a href="https://twitter.com/iskak" target="_blank" rel="noreferrer">
+				<a href="https://twitter.com/iskak_man" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon icon={faTwitter} />
 				</a>
 				<a href="https://www.instagram.com/iskakmu/" target="_blank" rel="noreferrer">

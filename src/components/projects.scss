@@ -9,8 +9,8 @@ $title-color: rgb(202, 212, 143);
 
   padding: 8% 0 0 0;
   .project-img {
-    height: 100px;
-    width: 170px;
+    height: 140px;
+    width: 220px;
     padding: 2em 0 0 0;
   }
 
@@ -62,10 +62,10 @@ $title-color: rgb(202, 212, 143);
         background-image: url('../images/ColourFinder.jpg');
       }
     }
-    #project-hiden {
-      opacity: 0;
-      transition: 3s ease-in-out;
-    }
+    // #project-hiden {
+    //   opacity: 0;
+    //   transition: 3s ease-in-out;
+    // }
   }
 }
 
