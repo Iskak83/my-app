@@ -19,7 +19,7 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
 }
 
 #bio {
-  margin: 5% 10%;
+  margin: 0% 10%;
   padding: 8% 0 0 0;
   .paragraph-title {
     display: flex;
@@ -44,20 +44,20 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
       float: left;
       height: 300px;
       width: 400px;
-      margin: 45px;
+      margin: 45px 45px 0;
       border-radius: 300px;
       box-shadow: 5px 5px 3px rgb(206, 205, 205);
       animation: fadeInOut 28s infinite ease-in-out;
     }
     #my-story {
       padding: 45px 45px 50px;
-      font-family: monospace;
+      font-family: 'Times New Roman', Times, serif;
       font-size: 1.3em;
       text-indent: 50px;
-      letter-spacing: 0.3px;
-      line-height: 2;
+      letter-spacing: 0.2px;
+      line-height: 1.7;
       word-spacing: 1px;
-      text-align: justify;
+      // text-align: justify;
     }
   }
 }
