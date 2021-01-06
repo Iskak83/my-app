@@ -23,7 +23,7 @@ $title-color: rgb(202, 212, 143);
     #eBudget,
     #colourFinder {
       position: relative;
-      font-family: monospace;
+      font-family: 'Times New Roman', Times, serif;
       border-bottom: solid 0.5px gray;
 
       #image-mixifyer,
@@ -63,12 +63,18 @@ $title-color: rgb(202, 212, 143);
         margin: 0px 10px;
         font-size: 2em;
       }
-      .project-description {
-        font-size: 1.3em;
+      .project-description,
+      #project-tools {
+        margin: 10px 0;
+        font-size: 1.2em;
         letter-spacing: 0.3px;
-        line-height: 2;
+        line-height: 1.5;
         word-spacing: 1px;
-        text-align: justify;
+
+        span {
+          font-weight: bold;
+          font-size: 1.1em;
+        }
       }
     }
   }
@@ -101,22 +107,15 @@ $title-color: rgb(202, 212, 143);
             margin: 0px 8px;
             font-size: 1.5em;
           }
-          .project-description {
+          .project-description,
+          #project-tools {
             margin-top: 10px;
             font-size: 1.1em;
             letter-spacing: 0.3px;
             line-height: 1.4;
             word-spacing: 0.5px;
-          }
-
-          #project-tools {
-            margin-top: 10px;
-            font-size: 1.1em;
-            letter-spacing: 0.1px;
-            line-height: 1.5;
-            word-spacing: 0.5px;
             span {
-              font-weight: bold;
+              font-size: 0.9em;
             }
           }
         }

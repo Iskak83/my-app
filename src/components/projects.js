@@ -2,13 +2,13 @@ import * as React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import useScrollPosition from '@react-hook/window-scroll';
+// import useScrollPosition from '@react-hook/window-scroll';
 import './projects.scss';
 import {projects} from './data'
 
 const Projects = () => {
   
-  const scrolly = useScrollPosition(60);
+  // const scrolly = useScrollPosition(60);
 
 
   return (
@@ -19,7 +19,7 @@ const Projects = () => {
 
           {projects.map( (el, inx) => (
           
-            <div id={el.class}>
+            <div id={el.class} key={el.id}>
             {/* <div id={scrolly > 1700+(inx/2.5*1000) && scrolly< 2720+(inx/2.5*1000) ? el.class : "project-hiden"}> */}
             
               <div id={el.img}/>

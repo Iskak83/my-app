@@ -49,11 +49,11 @@ $logo-shaddow-color: rgb(167, 189, 118);
       rgba(90, 182, 159, 0.5) 80%
     );
     text-align: center;
-    font-size: 50px;
+    font-size: 53px;
     font-family: Georgia, serif;
     width: 74px;
-    height: 70px;
-    padding: 3px 0 3px;
+    height: 80px;
+    padding: 0 0 5px;
     margin: 0em 0em 0em 1.9em;
     border-radius: 47%;
     float: left;
@@ -85,9 +85,6 @@ $logo-shaddow-color: rgb(167, 189, 118);
     button:hover {
       color: rgb(111, 136, 141);
       cursor: pointer;
-    }
-    button:focus {
-      outline: none;
     }
   }
 }

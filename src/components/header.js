@@ -12,7 +12,7 @@ export default function Header() {
         <div id="lineTwo"></div>
         <div id="lineThree"></div>
       </div>
-      <div onClick={() => scrollTo('#home')} id="logo" >im</div>
+      <button onClick={() => scrollTo('#home')} id="logo" >im</button>
     </div>
     <div id="nav-links"> 
      
