@@ -1,6 +1,6 @@
 import * as React from "react"
 import './hobbies.scss'
-import {myStory} from './data.js'
+import {hobbies} from './bio-data.js'
 
 
   const Hobby = () => {
@@ -14,13 +14,14 @@ import {myStory} from './data.js'
           <div id="hobby-container">
             <div id="hobby-images"/>
             <div id="hobby-story">
-              <p>{myStory.part1}</p>
+              {hobbies.map(el => el)}
+              {/* <p>{myStory.part1}</p>
               <br />
               <p>{myStory.part2}</p>
               <br />
               <p>{myStory.part3}</p>
               <br />
-              <p>{myStory.part4}</p>
+              <p>{myStory.part4}</p> */}
             </div>       
           </div> 
       </div>

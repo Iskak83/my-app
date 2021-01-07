@@ -1,6 +1,7 @@
 import * as React from "react"
 import "./bio.scss"
-const {myStory} = require('./data')
+import {myStory} from './bio-data'
+// const {myStory} = require('./data')
 
 const Bio = () => {
   return (
@@ -13,13 +14,8 @@ const Bio = () => {
         <div id="bio-container">
           <div id="my-images"/>
           <div id="my-story">
-            <p>{myStory.part1}</p>
-            <br />
-            <p>{myStory.part2}</p>
-            <br />
-            <p>{myStory.part3}</p>
-            <br />
-            <p>{myStory.part4}</p>
+            {myStory.map( el => el)}
+            
           </div>       
         </div> 
     </div>
