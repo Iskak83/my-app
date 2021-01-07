@@ -19,7 +19,7 @@ export default function Header() {
 							<button onClick={() => scrollTo('#bio')}>Bio</button>
               <button onClick={() => scrollTo('#projects')}>Projects</button>
               <button onClick={() => scrollTo('#education')}>Education</button>
-              <button onClick={() => scrollTo('#hobby')}>Hobby</button>
+              <button onClick={() => scrollTo('#hobby')}>Hobbies</button>
 				
 					
     </div>
