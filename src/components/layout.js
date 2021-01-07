@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   };
   const scrollY = useScrollPosition(60);
   const toTopBttnVisible = scrollY > 3900 ? "to-top-bttn-shown" : "to-top-bttn-hidden";
-  console.log('>>>>>>', window.pageYOffset)
+  
   return (
     <div className="layout">
       
