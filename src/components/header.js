@@ -5,13 +5,17 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 export default function Header() {
   return (
   <div id="nav-bar">
-    <div id="divider">
-      <div id="burger">
-        <div id="lineOne"></div>
-        <div id="lineTwo"></div>
-        <div id="lineThree"></div>
+    <div id="nav-left">
+      <div id="nav-logo">
+        <div id="burger">
+          <div id="lineOne"></div>
+          <div id="lineTwo"></div>
+          <div id="lineThree"></div>
+        </div>
+        
+        <button onClick={() => scrollTo('#home')} id="logo" >im</button>
       </div>
-      <button onClick={() => scrollTo('#home')} id="logo" >im</button>
+      <div id="divider"/>
     </div>
     <div id="nav-links"> 
      

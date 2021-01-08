@@ -73,6 +73,7 @@ $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
       color: blue;
       font-size: 0.8em;
       font-weight: bold;
+      cursor: pointer;
     }
   }
 }
@@ -105,14 +106,14 @@ $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
         background-repeat: no-repeat;
         height: 250px;
         width: 250px;
-        margin: 5% 0;
+        margin: 30px 0;
       }
       #my-story {
         font-size: 1.3em;
         text-indent: 30px;
         line-height: 1.4;
         word-spacing: 0.5px;
-        padding: 30px 30px 40px;
+        padding: 0px 30px 40px;
       }
     }
   }
