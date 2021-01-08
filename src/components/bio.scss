@@ -66,6 +66,14 @@ $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
         font-weight: bold;
       }
     }
+    button {
+      outline: none;
+      border: transparent;
+      background-color: transparent;
+      color: blue;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
   }
 }
 

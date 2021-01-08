@@ -70,6 +70,14 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
         font-weight: bold;
       }
     }
+    button {
+      outline: none;
+      border: transparent;
+      background-color: transparent;
+      color: blue;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
   }
 }
 

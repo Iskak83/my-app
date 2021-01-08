@@ -1,9 +1,18 @@
 import * as React from "react"
 import "./bio.scss"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import {myStory} from './bio-data'
 
 
+
 const Bio = () => {
+  const [readBttn, setReadBttn] = React.useState(true);
+  function toggleBttn(){
+    if(!readBttn) scrollTo('#bio')
+    setReadBttn(!readBttn)  
+    
+  }
+
   return (
     <div id="bio">
         <div className="paragraph-title">
@@ -14,8 +23,9 @@ const Bio = () => {
         <div id="bio-container">
           <div id="my-images"/>
           <div id="my-story">
-            {myStory.map( el => el)}
+            {readBttn ? myStory[0] : myStory.map( el=> el)}
             
+            <button type='button' onClick={()=> toggleBttn()}>{readBttn ? 'read more...' : '...read less'}</button>
           </div>       
         </div> 
     </div>
