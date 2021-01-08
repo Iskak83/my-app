@@ -80,12 +80,13 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
       width: 95%;
       margin: 0 2.5%;
       #hobby-images {
-        height: 170px;
-        width: 150px;
-        margin: 30px;
+        height: 135px;
+        width: 110px;
+        margin: 30px 30px 10px;
+        border-radius: 20px;
       }
       #hobby-story {
-        font-size: 1.1em;
+        font-size: 1.3em;
         text-indent: 30px;
         line-height: 1.4;
         word-spacing: 0.5px;

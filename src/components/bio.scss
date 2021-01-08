@@ -1,6 +1,6 @@
 $background-color: rgb(187, 220, 238);
 $title-color: rgb(202, 212, 143);
-$sizes: 0% 0, 5% 1, 18% 1, 24% 0, 25% 0 true;
+$sizes: 0% 0, 5% 1, 19% 1, 23% 0, 25% 0 true;
 $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
   '../images/buckingham.jpg' 50%, '../images/virtual-grad.jpg' 75%;
 
@@ -88,15 +88,19 @@ $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
 @media (max-width: 660px) {
   #bio {
     #bio-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       #my-images {
         background-size: cover;
         background-repeat: no-repeat;
         height: 250px;
         width: 250px;
-        margin: 5%;
+        margin: 5% 0;
       }
       #my-story {
-        font-size: 1.1em;
+        font-size: 1.3em;
         text-indent: 30px;
         line-height: 1.4;
         word-spacing: 0.5px;
