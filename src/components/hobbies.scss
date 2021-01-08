@@ -9,8 +9,6 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
     @each $percentage, $opacity, $no-image in $sizes {
       #{$percentage + $add-percantage} {
         opacity: $opacity;
-        background-size: cover;
-        background-repeat: no-repeat;
         @if $no-image == null {
           background-image: url($image);
         }
@@ -47,6 +45,8 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
 
     #hobby-images {
       float: left;
+      background-size: cover;
+      background-repeat: no-repeat;
       height: 340px;
       width: 300px;
       margin: 45px 45px 35px;
@@ -80,8 +80,8 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
       width: 95%;
       margin: 0 2.5%;
       #hobby-images {
-        height: 226.7px;
-        width: 200px;
+        height: 170px;
+        width: 150px;
         margin: 30px;
       }
       #hobby-story {

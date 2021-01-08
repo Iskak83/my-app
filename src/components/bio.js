@@ -1,7 +1,7 @@
 import * as React from "react"
 import "./bio.scss"
 import {myStory} from './bio-data'
-// const {myStory} = require('./data')
+
 
 const Bio = () => {
   return (
