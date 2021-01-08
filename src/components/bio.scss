@@ -1,15 +1,16 @@
 $background-color: rgb(187, 220, 238);
 $title-color: rgb(202, 212, 143);
 $sizes: 0% 0, 5% 1, 18% 1, 24% 0, 25% 0 true;
-$images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
-  '../images/nitto-final.jpg' 50%, '../images/virtual-grad.jpg' 75%;
+$bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
+  '../images/buckingham.jpg' 50%, '../images/virtual-grad.jpg' 75%;
 
-@keyframes fadeInOut {
-  @each $image, $add-percantage in $images {
+@keyframes fadeBioImages {
+  @each $image, $add-percantage in $bio-images {
     @each $percentage, $opacity, $no-image in $sizes {
       #{$percentage + $add-percantage} {
         opacity: $opacity;
-
+        background-size: cover;
+        background-repeat: no-repeat;
         @if $no-image == null {
           background-image: url($image);
         }
@@ -43,11 +44,12 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
     #my-images {
       float: left;
       height: 300px;
-      width: 400px;
-      margin: 45px 45px 40px;
-      border-radius: 300px;
+      width: 300px;
+      margin: 45px 45px 25px;
+      border-radius: 70px;
+      border: solid 2px gray;
       box-shadow: 5px 5px 3px rgb(206, 205, 205);
-      animation: fadeInOut 28s infinite ease-in-out;
+      animation: fadeBioImages 28s infinite ease-in-out;
     }
     #my-story {
       padding: 45px 45px 50px;
@@ -75,8 +77,8 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
       width: 95%;
       margin: 0 2.5%;
       #my-images {
-        height: 230px;
-        width: 300px;
+        height: 280px;
+        width: 280px;
         margin: 30px;
       }
     }
@@ -89,8 +91,8 @@ $images: '../images/ala-archa.jpg' 0%, '../images/cat.jpg' 25%,
       #my-images {
         background-size: cover;
         background-repeat: no-repeat;
-        height: 300px;
-        width: 90%;
+        height: 250px;
+        width: 250px;
         margin: 5%;
       }
       #my-story {
