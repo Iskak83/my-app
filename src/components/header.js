@@ -26,7 +26,7 @@ export default function Header() {
       </div>
       <div id="divider"/>
     </div>
-    <div id={!burger ? "nav-links" : "nav-links-mobile"}> 
+    <div id={burger ? "nav-links" : "nav-links-mobile"}> 
      
 							<button onClick={() => onClick('#bio')}>Bio</button>
               <button onClick={() => onClick('#projects')}>Projects</button>
