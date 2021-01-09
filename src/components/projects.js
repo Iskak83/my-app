@@ -12,7 +12,6 @@ const Projects = () => {
 
 
   return (
-    
       <div id="projects">
         <img src={require("../images/project.png")} alt="" className="project-img"/>
         <div className="project-container">
