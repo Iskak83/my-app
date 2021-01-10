@@ -79,17 +79,13 @@ $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1025px) {
   #bio {
-    width: 100%;
-    margin: 5em 0%;
     #bio-container {
-      width: 95%;
-      margin: 0 2.5%;
       #my-images {
         height: 280px;
         width: 280px;
-        margin: 30px;
+        margin: 45px 45px 0;
       }
     }
   }
@@ -97,6 +93,8 @@ $bio-images: '../images/ala-archa.jpg' 0%, '../images/parade.jpg' 25%,
 
 @media (max-width: 660px) {
   #bio {
+    width: 95%;
+    margin: 0 2.5%;
     #bio-container {
       display: flex;
       flex-direction: column;

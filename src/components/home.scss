@@ -39,6 +39,21 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .home {
+    h1 {
+      margin: 20% 10% 5%;
+      font-weight: bold;
+    }
+
+    h6 {
+      margin: 2% 5% 5%;
+    }
+    .Typewriter {
+      font-size: 1.5em;
+    }
+  }
+}
 @media (max-width: 770px) {
   #home {
     // height: 370px;

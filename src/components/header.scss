@@ -178,14 +178,9 @@ $logo-shaddow-color: rgb(167, 189, 118);
       flex-direction: column;
       justify-content: start;
       align-items: center;
-      // width: 149px;
       width: 100%;
-      // height: 220px;
       height: 100%;
-
-      background: rgb(79, 97, 95, 0.8);
-      // border-right: 10px solid rgb(51, 56, 51);
-      // border-bottom: 10px solid rgb(51, 56, 51);
+      background: rgb(79, 97, 95, 0.9);
       top: 59px;
       text-align: left;
       left: 0;
@@ -193,14 +188,12 @@ $logo-shaddow-color: rgb(167, 189, 118);
       margin: 0px;
 
       button {
-        outline: none;
-        background-color: transparent;
-        color: rgb(240, 255, 255);
+        color: rgb(250, 237, 237);
         font-weight: bold;
         width: 80%;
         text-align: start;
         margin: 25px 0px 0;
-        border-bottom: solid 1px rgb(49, 47, 47);
+        border-bottom: solid 1.5px rgb(221, 216, 216);
       }
     }
     #nav-links {
