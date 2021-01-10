@@ -49,10 +49,7 @@ $title-color: rgb(202, 212, 143);
         background-image: url('../images/ColourFinder.jpg');
       }
     }
-    // #project-hiden {
-    //   opacity: 0;
-    //   transition: 3s ease-in-out;
-    // }
+
     #colourFinder {
       border-bottom: none;
       padding-bottom: 50px;
@@ -97,12 +94,12 @@ $title-color: rgb(202, 212, 143);
         #image-mixifyer,
         #image-eBudget,
         #image-colourFinder {
-          margin: 0px 20px 4px 0;
-          height: 110px;
-          width: 110px;
+          margin: 0 20px 0 0;
+          height: 90px;
+          width: 90px;
         }
         .project-details {
-          padding: 0 0 30px;
+          padding: 0 0 35px;
           .project-links a {
             margin: 0px 8px;
             font-size: 1.5em;

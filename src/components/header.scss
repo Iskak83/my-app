@@ -95,6 +95,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
 
 @media (max-width: 780px) {
   #nav-bar {
+    height: 60px;
     #nav-left {
       width: 165px;
       // background-color: rgb(94, 94, 84);
@@ -185,7 +186,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
       background: rgb(79, 97, 95, 0.8);
       // border-right: 10px solid rgb(51, 56, 51);
       // border-bottom: 10px solid rgb(51, 56, 51);
-      top: 69px;
+      top: 59px;
       text-align: left;
       left: 0;
       transition: 0.5s ease-in-out;
