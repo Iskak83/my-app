@@ -1,5 +1,4 @@
 .home {
-  // margin: 0 0 20%;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -9,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
   background-size: cover;
   background-image: linear-gradient(
       to right,
@@ -28,11 +26,12 @@
   color: rgb(226, 228, 222);
   text-align: center;
   h1 {
-    margin: 120px 0 2% 0;
+    margin: 120px 0 25px 0;
     font-weight: 100;
+    font-weight: bold;
   }
   h6 {
-    margin: 1% 0 3% 0;
+    margin: 20px 0 35px 0;
   }
   .Typewriter {
     font-size: 1.3em;
@@ -40,29 +39,22 @@
 }
 
 @media (max-width: 1025px) {
+  #home {
+    font-size: 1.2em;
+  }
   .home {
     h1 {
-      margin: 20% 10% 5%;
-      font-weight: bold;
-    }
-
-    h6 {
-      margin: 2% 5% 5%;
-    }
-    .Typewriter {
-      font-size: 1.5em;
+      margin-top: 200px;
     }
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 660px) {
   #home {
-    // height: 370px;
-    font-size: 1em;
+    font-size: 0.85em;
   }
   .home {
     h1 {
-      // margin:  0 10% 0;
-      font-weight: bold;
+      margin-top: 30%;
     }
     h6 {
       margin: 1% 5% 10% 5%;
@@ -74,18 +66,16 @@
 }
 
 @media (max-width: 350px) {
+  #home {
+    font-size: 0.65em;
+  }
   .home {
     h1 {
-      margin: 80px 0 10% 0;
-      font-size: 1.4em;
+      margin: 100px 0 10% 0;
       font-weight: 500;
     }
     h3 {
-      font-size: 0.9em;
       margin: 0 5% 3%;
-    }
-    .Typewriter {
-      font-size: 1.1em;
     }
   }
 }
