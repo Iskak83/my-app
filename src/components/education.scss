@@ -60,17 +60,6 @@ $background-color: rgb(247, 240, 240);
   }
 }
 
-// @media (max-width: 1170px) {
-//   #education {
-//     .timeline-container {
-//       .vertical-timeline-element-date {
-//         color: rgb(5, 0, 0);
-//         font-weight: 600;
-//       }
-//     }
-//   }
-// }
-
 @media (max-width: 660px) {
   #education {
     .timeline-container {
@@ -89,7 +78,6 @@ $background-color: rgb(247, 240, 240);
     }
     .paragraph-title-edu {
       img {
-        // color: red;
         height: 120px;
         width: 150px;
       }
