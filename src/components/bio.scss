@@ -36,8 +36,7 @@ $bio-images: '../images/ala-archa.png' 0%, '../images/parade.png' 25%,
   #bio-container {
     background-color: rgb(254, 249, 249);
     border-radius: 20px;
-    padding: 45px;
-
+    padding: 45px 45px 50px;
     #my-images {
       float: left;
       background-size: cover;
@@ -54,7 +53,7 @@ $bio-images: '../images/ala-archa.png' 0%, '../images/parade.png' 25%,
     #my-story {
       padding-bottom: 50px;
       font-family: 'Times New Roman', Times, serif;
-      font-size: 1.3em;
+      font-size: 1.4em;
       text-indent: 50px;
       letter-spacing: 0.2px;
       line-height: 1.7;
