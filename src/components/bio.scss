@@ -36,13 +36,14 @@ $bio-images: '../images/ala-archa.png' 0%, '../images/parade.png' 25%,
   #bio-container {
     background-color: rgb(254, 249, 249);
     border-radius: 20px;
-    padding: 45px 45px 50px;
+    padding: 45px;
     #my-images {
       float: left;
       background-size: cover;
       background-repeat: no-repeat;
-      height: 300px;
-      width: 300px;
+      height: 270px;
+
+      width: 270px;
       max-width: 90%;
       margin: 0px 45px 45px 0;
       border-radius: 10px;
@@ -51,7 +52,7 @@ $bio-images: '../images/ala-archa.png' 0%, '../images/parade.png' 25%,
       animation: fadeBioImages 28s infinite ease-in-out;
     }
     #my-story {
-      padding-bottom: 50px;
+      // padding-bottom: px;
       font-family: 'Times New Roman', Times, serif;
       font-size: 1.4em;
       text-indent: 50px;

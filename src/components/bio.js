@@ -23,9 +23,9 @@ const Bio = () => {
         <div id="bio-container">
           <div id="my-images"/>
           <div id="my-story">
-            {readBttn ? myStory[0] : myStory.map( el=> el)}
+            {readBttn ? myStory(readBttn)[0]: myStory(readBttn).map( el=> el)}
             
-            <button type='button' onClick={()=> toggleBttn()}>{readBttn ? 'read more...' : '...read less'}</button>
+            <button type='button' onClick={()=> toggleBttn()}>{readBttn ? (  'read more...' ): '...read less'}</button>
           </div>       
         </div> 
     </div>
