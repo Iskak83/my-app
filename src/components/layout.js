@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const scrollY = useScrollPosition(60);
-  const toTopBttnVisible = scrollY > 3900 ? "to-top-bttn-shown" : "to-top-bttn-hidden";
+  const toTopBttnVisible = scrollY > 4200 ? "to-top-bttn-shown" : "to-top-bttn-hidden";
   
   return (
     <div className="layout">

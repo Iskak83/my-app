@@ -2,6 +2,7 @@ import * as React from "react"
 import "./bio.scss"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import {myStory} from './bio-data'
+import RotatImages from './RotatImages'
 
 
 
@@ -12,7 +13,10 @@ const Bio = () => {
     setReadBttn(!readBttn)  
     
   }
-
+  const images = [`ala-archa.png`, `parade.png`,
+  `buckingham.png`, `virtual-grad.png`]
+  const imgInfo = ['Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
+  `Buckingham Palace, London`, `Fullstack virtual graduation, South Orange`]
   return (
     <div id="bio">
         <div className="paragraph-title">
@@ -20,8 +24,11 @@ const Bio = () => {
           <h1>Biography</h1>
           <h3>{"  >>>"}</h3>
         </div>
+        {/* <RotatImages images={images} className="rotate-images"/> */}
         <div id="bio-container">
-          <div id="my-images"/>
+
+          {/* <div id="my-images"/> */}
+          <RotatImages images={images} imgInfo={imgInfo} className="rotate-images"/>
           <div id="my-story">
             {readBttn ? myStory(readBttn)[0]: myStory(readBttn).map( el=> el)}
             
