@@ -22,7 +22,7 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
                 setText(txt) 
                 console.log('....',i, txt)
             }
-        //    
+
             if(!isDeleting && txt === texts[i]){
                 newSpeed = endSpeed
                 isDeleting = true
