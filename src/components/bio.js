@@ -2,7 +2,7 @@ import * as React from "react"
 import "./bio.scss"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import {myStory} from './bio-data'
-import RotatImages from './RotatImages'
+import RotateImages from './RotateImages'
 
 
 
@@ -28,7 +28,7 @@ const Bio = () => {
         <div id="bio-container">
 
           {/* <div id="my-images"/> */}
-          <RotatImages images={images} imgInfo={imgInfo} className="rotate-images"/>
+          <RotateImages images={images} imgInfo={imgInfo} className="rotate-images"/>
           <div id="my-story">
             {readBttn ? myStory(readBttn)[0]: myStory(readBttn).map( el=> el)}
             

@@ -7,12 +7,14 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
    
   useEffect(() => {
       
+      
         let i = 0;
         let isDeleting  = false;
         let txt = '';
+        let t;
       
         const  rotateText = () => {
-
+// 
            let string = texts[i]
            let newSpeed = speed
 
@@ -20,20 +22,22 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
               
                 txt = string.slice(0, txt.length - 1)
                 setText(txt) 
-         
+ 
             }else{
                 
                 txt = string.slice(0, txt.length + 1)
                 setText(txt) 
+  
             }
 
             if(!isDeleting && txt === texts[i]){
 
                 newSpeed = endSpeed
                 isDeleting = true
+                
                
             }else if(isDeleting && txt === ''){
-            
+              
                 isDeleting = false
                 newSpeed = speed*3
                 i++
@@ -44,11 +48,12 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
                 newSpeed = speed / 2
             }
 
-            setTimeout(() => rotateText(), newSpeed)
+          t =  setTimeout(() => rotateText(), newSpeed)
         }
         rotateText()
+       
         
-
+        return () => clearTimeout(t)
     }, [texts, speed, endSpeed])
    
 
