@@ -10,7 +10,6 @@ const Images = (props) =>{
         let index = 0
         const  rotateImages = () => {
             
-    
                setImage(props.images[index])
                setImgInfo(props.imgInfo[index])
     
@@ -22,6 +21,7 @@ const Images = (props) =>{
                           rotateImages();
               }, 7000)
           }
+          
         rotateImages()}, [props])
 
    
