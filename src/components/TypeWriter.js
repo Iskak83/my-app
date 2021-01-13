@@ -20,13 +20,13 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
             }else{
                 txt = string.slice(0, txt.length + 1)
                 setText(txt) 
-                console.log('....',i, txt)
+             
             }
 
             if(!isDeleting && txt === texts[i]){
                 newSpeed = endSpeed
                 isDeleting = true
-                console.log('>>>>>>',i, txt)
+               
             }else if(isDeleting && txt === ''){
                 console.log('<<<<<<',i, txt)
                 isDeleting = false
