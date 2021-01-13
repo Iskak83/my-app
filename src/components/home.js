@@ -22,8 +22,8 @@ const Home = () => {
                     strings: ['Trilinguist', 'Tennis fan', 'Cook', 'Pet lover', 'Hiker', 'Traveller'],
                     autoStart: true,
                     loop: true
-                }} */}
-            {/* /> */}
+                }}
+            /> */}
 				</div>	
     </div>
   )
