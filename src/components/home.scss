@@ -1,3 +1,12 @@
+@keyframes rightBorder {
+  from {
+    border-right: solid 1.5px white;
+  }
+  to {
+    border-right: solid 1.5px transparent;
+  }
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -32,6 +41,11 @@
   }
   h6 {
     margin: 20px 0 35px 0;
+  }
+  .type-writer {
+    font-size: 1.3em;
+    padding-right: 5px;
+    animation: rightBorder 1s ease-in-out infinite;
   }
   .Typewriter {
     font-size: 1.3em;
