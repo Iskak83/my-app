@@ -30,7 +30,7 @@ const Bio = () => {
           {/* <div id="my-images"/> */}
           <RotateImages images={images} imgInfo={imgInfo} className="rotate-images"/>
           <div id="my-story">
-            {readBttn ? myStory(readBttn)[0]: myStory(readBttn).map( el=> el)}
+            {readBttn ? myStory[0]: myStory.map( el=> el)}
             
             <button type='button' onClick={()=> toggleBttn()}>{readBttn ? (  'read more...' ): '...read less'}</button>
           </div>       
