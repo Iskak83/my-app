@@ -18,6 +18,9 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
 }
 
 #hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10% 10%;
   padding: 100px 0 8% 0;
 
@@ -41,6 +44,7 @@ $images: '../images/gym.jpg' 0%, '../images/centre-court.jpg' 25%,
     background-color: rgb(254, 249, 249);
     border-radius: 20px;
     padding: 45px;
+    max-width: 1170px;
 
     #hobby-images {
       float: left;

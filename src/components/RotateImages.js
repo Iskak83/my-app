@@ -1,6 +1,5 @@
 import  React, {useState, useEffect} from 'react'
 
-
 const RotateImages = (props) =>{
     
     const [image, setImage] = useState('')
@@ -22,7 +21,6 @@ const RotateImages = (props) =>{
               
               t = setTimeout(() => rotateImages()
               , 6000)
-        
              
           }
           
