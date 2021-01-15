@@ -23,10 +23,10 @@ const RotateImages = (props) =>{
               t = setTimeout(() => rotateImages()
               , 6000)
         
-              return () => clearTimeout(t)
+             
           }
           
-       t = setTimeout( () => rotateImages(), 2000)
+      rotateImages()
        
     return () => clearTimeout(t)
 

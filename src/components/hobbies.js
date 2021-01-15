@@ -1,15 +1,15 @@
 import * as React from "react"
-import './hobbies.scss'
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import {hobbies} from './bio-data.js'
-
+import './hobbies.scss'
 
   const Hobby = () => {
-    const [readBttn, setReadBttn] = React.useState(true);
+
+  const [readBttn, setReadBttn] = React.useState(true);
+
   function toggleBttn(){
     if(!readBttn) scrollTo('#hobby')
-    setReadBttn(!readBttn)  
-    
+    setReadBttn(!readBttn)    
   }
     return (
       <div id="hobby">

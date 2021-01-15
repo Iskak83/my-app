@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './education.scss';
 import {education} from './bio-data'
-// const {education} = require('./data')
+
 
 const Education = () => {
 	

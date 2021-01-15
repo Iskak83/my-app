@@ -1,18 +1,20 @@
 import * as React from "react"
-import "./bio.scss"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import {myStory} from './bio-data'
 import RotateImages from './RotateImages'
+import "./bio.scss"
 
 
 
 const Bio = () => {
+
   const [readBttn, setReadBttn] = React.useState(true);
+  
   function toggleBttn(){
     if(!readBttn) scrollTo('#bio')
-    setReadBttn(!readBttn)  
-    
+    setReadBttn(!readBttn)    
   }
+
   const images = [`ala-archa.png`, `parade.png`,
   `buckingham.png`, `virtual-grad.png`]
   

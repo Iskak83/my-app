@@ -7,9 +7,11 @@ import "./home.scss"
 const Home = () => {
 
   const texts = ['Trilinguist', 'Tennis fan','Cook', 'Pet lover', 'Hiker', 'Traveller']
+
   const speed = 150
   const endSpeed = 2000
   const className = 'type-writer'
+  
   return (
     <div id="home">
       <div className="home">
