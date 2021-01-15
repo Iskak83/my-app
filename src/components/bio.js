@@ -8,10 +8,14 @@ import RotateImages from './RotateImages'
 
 const Bio = () => {
   const [readBttn, setReadBttn] = React.useState(true);
- 
+  function toggleBttn(){
+    if(!readBttn) scrollTo('#bio')
+    setReadBttn(!readBttn)  
+    
+  }
   const images = [`ala-archa.png`, `parade.png`,
   `buckingham.png`, `virtual-grad.png`]
-
+  
   const imgInfo = ['Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
   `Buckingham Palace, London`, `Fullstack virtual graduation, South Orange`]
 

@@ -4,7 +4,7 @@ import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 // import useScrollPosition from '@react-hook/window-scroll';
 import './projects.scss';
-import {projects} from './data'
+import {projects} from './bio-data'
 
 const Projects = () => {
   

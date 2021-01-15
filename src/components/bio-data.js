@@ -18,3 +18,94 @@ export const myStory = [
    ]
 
 
+     
+      export const projects = [
+          {
+              name: "Mixifyer",
+              img: "image-mixifyer",
+              date: "October 2020 - November 2020",
+              description: "Mixifyer is an e-commerce application that allows users to create their own account, add their favorite drinks to their shopping cart, edit their shopping cart, and place their order using credit/debit card payment.",
+              bulletPoints: {
+                  one: "My scope of work for this project included",
+                  two: "-Designed and implemented a persistent user’s shopping cart page to see the items in the cart and to change quantities and delete them from the cart anytime.",
+                  three: "-Created and implemented an Admin-user page with functionality to have access to all users’ information, to add or remove inventory, or to change inventory information, such as cost, in stock etc."
+              },
+              tools: "['Express', 'PostgreSQL', 'Sequelize', 'React','Redux', 'Stripe API']",
+              gitHub: 'https://github.com/Mixifyer/Mixifyer',
+              link: "https://mixifyer.herokuapp.com",
+              class: "mixifyer",
+              id: 1,
+           
+  
+          },
+          {
+              name: "eBudget",
+              img: "image-eBudget",
+              date: "October 2020 - November 2020",
+              description: "Financial planning web application to create a personal budget. It allows the user to quickly see their spending habits by category, compare spending between months, and set desired spending limits.",
+              bulletPoints: {
+                  one: "This project involved",
+                  two: "-Built functionality to establish a persistent connection to the user's bank account through Plaid API and to fetch the user’s bank account activity including transfers, payments and spending.",
+                  three: "-Incorporated doughnut and bar charts functionality to display monthly and yearly spending using Chart.js."
+              },
+              tools: "['Express', 'PostgreSQL', 'React', 'Redux', 'React-Redux', 'ChartJS', 'Plaid API']",
+              gitHub: 'https://github.com/Iskak83/eBudget',
+              link: "https://ebudget-fsa2020.herokuapp.com",
+              class: "eBudget",
+              id: 2,
+             
+  
+          },
+          {
+              name: "ColourFinder",
+              img: "image-colourFinder",
+              date: "October 2020 - November 2020",
+              description: "ColourFinder is an app to identify the name and hex code of colors from a selected picture from a device's local storage or from a picture taken with the device’s camera. It is an especially helpful tool for designers and developers wanting to capture any color they encounter and use it in their projects.",
+              bulletPoints: {
+                  one: "",
+                  two: "",
+                  three: ""
+              },
+              tools: "['React-Native', 'Clariffi API']",
+              gitHub: 'https://github.com/Iskak83/ColourFinder',
+              link: "https://expo.io/@iskak/projects/colour-finder",
+              class: "colourFinder",
+              id: 3,
+  
+          },
+      ]
+      export const education = [
+          {
+             name: "Fullstack Academy",
+             address: "New York, NY",
+             date: "March 2020 - August 2020",
+             degree: "Certificate in Full Stack Web Development, Software Engineering Immersive",
+             class: "image-fsa",
+             id: 1
+         },
+          {
+             name: "Kyrgyz Russian Slavic University",
+             address: "Bishkek, Kyrgyzstan",
+             date: "September 2005 - July 2011",
+             degree: "Economics | Accounting",
+             class: "image-krsu",
+             id: 2
+         },
+        {
+             name: "Kyrgyz National University",
+             address: "Bishkek, Kyrgyzstan",
+             date: "September 2003 - July 2005",
+             degree: "Mathematics",
+             class: "image-knu",
+             id: 3
+         },
+         {
+             name: "Kyrgyz Economic University",
+             address: "Bishkek, Kyrgyzstan",
+             date: "September 2001 - July 2003",
+             degree: "General Law",
+             class: "image-keu",
+             id: 4
+         }
+     ]
+
