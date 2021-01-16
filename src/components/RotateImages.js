@@ -1,18 +1,18 @@
 import  React, {useState, useEffect} from 'react'
 
-const RotateImages = ({images, imgInfo}) =>{
+const RotateImages = ({images, imgInfo, anime}) =>{
     
     const [image, setImage] = useState('')
     const [imageInfo, setImgInfo] = useState('')
-    const [classImg, setClassImg] = useState('fade-in-out')
-    const [classTxt, setClassTxt] = useState('slide-in')
+    const [classFade, setClassFade] = useState('fade-in-out')
+    const [classSlide, setClassSlide] = useState('slide-in')
 
     useEffect(() => {
 
         let i = 0;
         let j = 0;
         let t;
-        let speed = 1000;
+        let speed;
 
         const  rotateImages = () => {
             const newImg = images[i]
@@ -23,23 +23,26 @@ const RotateImages = ({images, imgInfo}) =>{
             j++
             
             if(j === 2){ 
-                setClassImg('rotate-image')
-                setClassTxt('rotate-txt')
-                speed = 4000
+                setClassFade('rotate-image')
+                setClassSlide('rotate-txt')
+                speed = 4300
             }else if(j===3) {
-                setClassImg('fade-in-out')
-                setClassTxt('slide-out')
+                setClassFade('fade-out')
+                setClassSlide('slide-out')
                 j = 0
                 i++
-                speed = 1000;
+                speed = 1500;
             }else{
-                setClassTxt('slide-in')
+                setClassFade('fade-in')
+                setClassSlide('slide-in')
+                speed = 200;
             }
 
             if(i === images.length) i = 0
             
             t = setTimeout(() => rotateImages()
             , speed)
+            return () => clearTimeout(t)
              
           }
           
@@ -49,12 +52,14 @@ const RotateImages = ({images, imgInfo}) =>{
 
     }, [images, imgInfo])
 
+ 
    
 
     return(
         <div id="fade-img">
-            <img src={image} alt='' className={classImg}/>
-            <div className={classTxt}>{imageInfo}</div>
+             <img src={image} alt='' className={anime === 'fade' ? classFade : classSlide}/>
+            <div className={anime === 'fade' ? classSlide : classFade }>{imageInfo}</div>
+        
         </div>
     )
    

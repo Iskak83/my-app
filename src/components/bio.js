@@ -23,7 +23,7 @@ const Bio = () => {
 
   return (
     <div id="bio">
-      
+
         <div className="paragraph-title">
           <h3>{"<<<  "}</h3> 
           <h1>Biography</h1>
@@ -31,7 +31,7 @@ const Bio = () => {
         </div>
        
         <div id="bio-container">
-          <RotateImages images={images} imgInfo={imgInfo}/>
+          <RotateImages images={images} imgInfo={imgInfo} anime={'fade'}/>
 
           <div id="my-story">
             {readBttn ? myStory[0]: myStory.map( el=> el)}
