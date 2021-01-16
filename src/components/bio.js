@@ -32,7 +32,7 @@ const Bio = () => {
         <div id="bio-container">
 
           {/* <div id="my-images"/> */}
-          <RotateImages images={images} imgInfo={imgInfo} className="rotate-images"/>
+          <RotateImages images={images} imgInfo={imgInfo}/>
           <div id="my-story">
             {readBttn ? myStory[0]: myStory.map( el=> el)}
             
