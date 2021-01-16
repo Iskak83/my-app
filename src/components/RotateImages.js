@@ -1,9 +1,9 @@
 import  React, {useState, useEffect} from 'react'
 
-const RotateImages = ({imgae, imgInfo}) =>{
+const RotateImages = ({images, imgInfo}) =>{
     
     const [image, setImage] = useState('')
-    const [imgInfo, setImgInfo] = useState('')
+    const [imageInfo, setImgInfo] = useState('')
     const [classImg, setClassImg] = useState('fade-in-out')
     const [classTxt, setClassTxt] = useState('slide-in')
 
@@ -47,14 +47,14 @@ const RotateImages = ({imgae, imgInfo}) =>{
        
     return () => clearTimeout(t)
 
-    }, [imgae, imgInfo])
+    }, [images, imgInfo])
 
    
 
     return(
         <div id="fade-img">
             <img src={image} alt='' className={classImg}/>
-            <div className={classTxt}>{imgInfo}</div>
+            <div className={classTxt}>{imageInfo}</div>
         </div>
     )
    

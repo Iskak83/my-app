@@ -23,21 +23,21 @@ const Bio = () => {
 
   return (
     <div id="bio">
+      
         <div className="paragraph-title">
           <h3>{"<<<  "}</h3> 
           <h1>Biography</h1>
           <h3>{"  >>>"}</h3>
         </div>
-        {/* <RotatImages images={images} className="rotate-images"/> */}
+       
         <div id="bio-container">
-
-          {/* <div id="my-images"/> */}
           <RotateImages images={images} imgInfo={imgInfo}/>
+
           <div id="my-story">
             {readBttn ? myStory[0]: myStory.map( el=> el)}
-            
             <button type='button' onClick={()=> toggleBttn()}>{readBttn ? (  'read more...' ): '...read less'}</button>
-          </div>       
+          </div>    
+
         </div> 
     </div>
   )
