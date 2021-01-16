@@ -1,6 +1,6 @@
 import  React, {useState, useEffect} from 'react'
 
-const RotateImages = (props) =>{
+const RotateImages = ({imgae, imgInfo}) =>{
     
     const [image, setImage] = useState('')
     const [imgInfo, setImgInfo] = useState('')
@@ -8,13 +8,15 @@ const RotateImages = (props) =>{
     const [classTxt, setClassTxt] = useState('slide-in')
 
     useEffect(() => {
+
         let i = 0;
         let j = 0;
         let t;
         let speed = 1000;
+
         const  rotateImages = () => {
-            const newImg = props.images[i]
-            const info = props.imgInfo[i]
+            const newImg = images[i]
+            const info = imgInfo[i]
             setImage(newImg)
             setImgInfo(info)
 
@@ -34,7 +36,7 @@ const RotateImages = (props) =>{
                 setClassTxt('slide-in')
             }
 
-            if(i === props.images.length) i = 0
+            if(i === images.length) i = 0
             
             t = setTimeout(() => rotateImages()
             , speed)
@@ -45,7 +47,7 @@ const RotateImages = (props) =>{
        
     return () => clearTimeout(t)
 
-    }, [props])
+    }, [imgae, imgInfo])
 
    
 
