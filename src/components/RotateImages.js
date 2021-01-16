@@ -4,7 +4,7 @@ const RotateImages = ({images, imgInfo, anime}) =>{
     
     const [image, setImage] = useState('')
     const [imageInfo, setImgInfo] = useState('')
-    const [classFade, setClassFade] = useState('fade-in-out')
+    const [classFade, setClassFade] = useState('fade-in')
     const [classSlide, setClassSlide] = useState('slide-in')
 
     useEffect(() => {
@@ -23,8 +23,8 @@ const RotateImages = ({images, imgInfo, anime}) =>{
             j++
             
             if(j === 2){ 
-                setClassFade('rotate-image')
-                setClassSlide('rotate-txt')
+                setClassFade('fading')
+                setClassSlide('sliding')
                 speed = 4300
             }else if(j===3) {
                 setClassFade('fade-out')

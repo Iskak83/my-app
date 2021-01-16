@@ -12,9 +12,12 @@ const Hobby = () => {
     if(!readBttn) scrollTo('#hobby')
     setReadBttn(!readBttn)    
   }
+
   const images = [`gym.jpg`, `centre-court.jpg`,
   `nitto-final.jpg`, `homemade-sausage.jpg`]
-  const imgInfo = ['LA Fitness, Baltimore', 'Centre Court in Wimbledon, London', 'ATP Nitto-Final in O2, London', 'Sage Wrap Beef, Gordon Ramsay recipe']
+
+  const imgInfo = ['LA Fitness, Baltimore', 'Centre Court in Wimbledon, London', 'ATP Nitto-Final in O2, London', 'Sage Wrap Beef with fennel']
+
     return (
       <div id="hobby">
           <div className="paragraph-title">
@@ -24,7 +27,6 @@ const Hobby = () => {
           </div>
           <div id="hobby-container">
             <RotateImages images={images} imgInfo={imgInfo} anime={'slide'} />
-            {/* <div id="hobby-images"/> */}
             <div id="hobby-story">
             {readBttn ? (hobbies[0]): hobbies.map( el=> el)}
             
