@@ -1,13 +1,37 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import "./header.scss"
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import {LanguageContext}  from '../pages/index'
 
 export default function Header() {
+
   const [burger, setBurger] = useState(true)
+
   function onClick(idName){
     if(!burger)setBurger(true)
     if(idName !== '') scrollTo(idName)
   }
+
+  const {state, change} = useContext(LanguageContext)
+
+  const language = state.language 
+
+  const tongueBttn = state.language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'АН', ru: 'РУ'}
+
+
+  const changeLanguge = (language) => {
+    change.languageChanged(language)
+    console.log('after', state)
+  }
+
+  const languages = <div className="tonges">
+      <button type='button' onClick={() => changeLanguge('english')}>{tongueBttn.en}</button>
+     <button type='button' onClick={() => changeLanguge('russian')}>{tongueBttn.ru}</button>
+  </div>
+
+  const links = language === "english" ? ['Bio', 'Projects', 'Education', 'Hobbies'] : ['Био', 'Проекты', 'Образование', 'Xобби']
+
+  const idNames = [{id: 1, link: '#bio'}, {id: 2, link: '#projects'}, {id: 3, link: '#education'}, {id: 4, link: '#hobbies'}]
 
   return (
   <div id="nav-bar">
@@ -27,13 +51,11 @@ export default function Header() {
       <div id="divider"/>
     </div>
     <div id={burger ? "nav-links" : "nav-links-mobile"}> 
-     
-							<button onClick={() => onClick('#bio')}>Bio</button>
-              <button onClick={() => onClick('#projects')}>Projects</button>
-              <button onClick={() => onClick('#education')}>Education</button>
-              <button onClick={() => onClick('#hobby')}>Hobbies</button>
-				
-					
+
+      {links.map((el, i)=> <button key={idNames[i].id} type='button' onClick={() => onClick(idNames[i].link)}>{el}</button>)}
+    
+      {languages} 
+
     </div>
 
 </div>

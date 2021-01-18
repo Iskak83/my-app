@@ -5,39 +5,45 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
-import Header from "./header"
-import Footer from "./footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp} from '@fortawesome/free-solid-svg-icons';
 import "./layout.scss"
-import useScrollPosition from '@react-hook/window-scroll';
+
 
 const Layout = ({ children }) => {
+
+  const [scrolled, setScrolled] = useState(0)
+  
+  window.onscroll = function(){
+
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+  setScrolled(winScroll)
+}
+
   const scrollTop = () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  const scrollY = useScrollPosition(60);
-  const toTopBttnVisible = scrollY > 4200 ? "to-top-bttn-shown" : "to-top-bttn-hidden";
+
+  const toTopBttnVisible = scrolled > 4200 ? "to-top-bttn-shown" : "to-top-bttn-hidden";
   
   return (
     <div className="layout">
-      
-          <Header id="header"/>
-          
+        
           <div id="main">
             <main>{children}</main> 
           </div>
 
-          <div id={toTopBttnVisible}>
+            <div id={toTopBttnVisible}>
               <button type="button"  onClick={scrollTop} className="scroll-to-top-bttn">
                   <FontAwesomeIcon icon={faAngleUp} />
               </button>
-          </div>
+          </div> 
 
-          <Footer/>
-    </div>
+    </div>  
+   
   )
 }
 

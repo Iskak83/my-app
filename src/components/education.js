@@ -2,7 +2,8 @@ import * as React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './education.scss';
-import {education} from './bio-data'
+import {education} from './data'
+import {educationRU} from './data-ru'
 
 
 const Education = () => {

@@ -6,11 +6,9 @@ import './footer.scss';
 
 const Footer = () => {
 
-
 	return (
 		<footer className="footer-links" id="footer">
 
-		
 				<a href="mailto: ayzik55@gmail.com">
 					<FontAwesomeIcon icon={faEnvelope} />
 				</a>

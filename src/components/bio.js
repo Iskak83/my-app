@@ -1,6 +1,7 @@
 import * as React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import {myStory} from './bio-data'
+import {myStory} from './data'
+import {myStoryRU} from './data-ru'
 import RotateImages from './RotateImages'
 import "./bio.scss"
 
@@ -20,6 +21,10 @@ const Bio = () => {
   
   const imgInfo = ['Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
   `Buckingham Palace, London`, `Fullstack virtual graduation, South Orange`]
+  
+
+  const imgInfoRU = ['Горы Ала-Арча, Кыргызстан.', `Парад 2019, NYC`,
+  `Buckingham Palace, London`, `Виртуальный выпускной из Fullstack, Fullstack South Orange`]
 
   return (
     <div id="bio">
