@@ -86,14 +86,29 @@ $logo-shaddow-color: rgb(167, 189, 118);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 0.6em;
+      font-size: 0.7em;
+      border: solid 1px gray;
+      border-radius: 5px;
+      background: white;
+
       button {
         outline: none;
         color: $links-color;
         background: transparent;
+        padding: 1px;
+        img {
+          height: 6px;
+          width: 10px;
+        }
+      }
+      #am-flag-icon {
+        width: 100%;
+        border-bottom: double 1.5px gray;
+        border-bottom-style: groove;
+        // padding-bottom: 1px;
       }
       button:hover {
-        color: rgb(133, 163, 157);
+        background-color: rgb(133, 163, 157);
       }
     }
   }
@@ -189,17 +204,36 @@ $logo-shaddow-color: rgb(167, 189, 118);
         }
       }
     }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .mobile-tonge {
       float: right;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 100%;
+      align-self: center;
+      font-size: 0.7em;
+      border: solid 1px gray;
+      border-radius: 5px;
+      // padding: 2px;
+      // height: 100%;
       margin-right: 20px;
       button {
         outline: none;
         color: rgb(250, 237, 237);
         background: transparent;
+        padding: 2px;
+        img {
+          height: 9px;
+          width: 9px;
+        }
+      }
+      #am-flag-icon {
+        width: 100%;
+        border-bottom: double 0.5px gray;
+        // padding-bottom: 1px;
       }
       button:hover {
         color: rgb(140, 207, 193);

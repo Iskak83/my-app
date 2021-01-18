@@ -26,8 +26,8 @@ export default function Header() {
   }
 
   const languages = (tonge) => <div  className={tonge}>
-      <button type='button' onClick={() => changeLanguge('english')}>{tongueBttn.en}</button>
-     <button type='button' onClick={() => changeLanguge('russian')}>{tongueBttn.ru}</button>
+      <button type='button'  id="am-flag-icon" onClick={() => changeLanguge('english')}>{tongueBttn.en} <img src={`amer-flag.jpg`}/></button>
+     <button type='button' onClick={() => changeLanguge('russian')}>{tongueBttn.ru} <img src={`russ-flag.jpg`} id="ru-flag-icon"/></button>
   </div>
 
   const links = language === "english" ? ['Bio', 'Projects', 'Education', 'Hobbies'] : ['Био', 'Проекты', 'Образование', 'Xобби']
