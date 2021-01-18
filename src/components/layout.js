@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState } from "react"
+import React, { useState, useEffect} from "react"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp} from '@fortawesome/free-solid-svg-icons';
@@ -15,13 +15,13 @@ import "./layout.scss"
 const Layout = ({ children }) => {
 
   const [scrolled, setScrolled] = useState(0)
+
+  useEffect(() => {window.onscroll = function(){
+
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   
-  document.body.onscroll = function(){
-
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-
-  setScrolled(winScroll)
-}
+    setScrolled(winScroll)
+  }}, [])
 
   const scrollTop = () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
