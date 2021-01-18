@@ -4,17 +4,24 @@ import 'react-vertical-timeline-component/style.min.css';
 import './education.scss';
 import {education} from './data'
 import {educationRU} from './data-ru'
+import {LanguageContext}  from '../pages/index'
 
 
 const Education = () => {
-	
+
+	const {state, change} = React.useContext(LanguageContext)
+
+	const language = state.language 
+
+	const eduInfo = language === "english" ? education : educationRU
+
 	return (
 		<div  id="education">
 			<div className="paragraph-title-edu">
 				<img src={require('../images/education.jpg')} className="paragraph-title-edu" alt=''/>
 			</div>
 			<VerticalTimeline className="timeline-container">
-				{education.map(el => (
+				{eduInfo.map(el => (
 				<VerticalTimelineElement key={el.id}
 					className="vertical-timeline-element--work"
 					contentStyle={styles['card']}
