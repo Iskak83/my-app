@@ -7,8 +7,8 @@ import {LanguageContext}  from '../pages/index'
 import './hobbies.scss'
 
 const Hobby = () => {
-  const {state, change} = React.useContext(LanguageContext)
 
+  const {state, change} = React.useContext(LanguageContext)
 
   const [readBttn, setReadBttn] = React.useState(true);
 

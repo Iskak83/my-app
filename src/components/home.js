@@ -10,7 +10,7 @@ const Home = () => {
 
   const language = state.language 
   const titles = language === "english" ? {name: 'Iskak Mantyubetov', profession: 'Full stack software engineer'} : {name: 'Искак Мантюбетов', profession: 'Инженер-программист полного цикла'}
-  const texts = language === "english" ? ['Trilinguist', 'Tennis fan','Cook', 'Pet lover', 'Hiker', 'Traveller'] : ['Трилингвист', 'Фанат тенниса', 'Кулинар', 'Любитель домашних животных', 'Любитель гор', 'Путешественник' ]
+  const texts = language === "english" ? ['Trilinguist', 'Tennis fan','Cook', 'Pet lover', 'Hiker', 'Traveller'] : ['Трилингвист', 'Фанат тенниса', 'Повар-Кулинар', 'Любитель домашних животных', 'Горный турист', 'Путешественник' ]
 
 
   const speed = 150
