@@ -16,7 +16,7 @@ export default function Header() {
 
   const language = state.language 
 
-  const tongueBttn = state.language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'АН', ru: 'РУ'}
+  const tongueBttn = state.language === 'english' ? {en: 'eng', ru: 'rus'} : {en: 'анг', ru: 'рус'}
 
 
   const changeLanguge = (language) => {
@@ -24,7 +24,7 @@ export default function Header() {
     console.log('after', state)
   }
 
-  const languages = <div className="tonges">
+  const languages = (tonge) => <div  className={tonge}>
       <button type='button' onClick={() => changeLanguge('english')}>{tongueBttn.en}</button>
      <button type='button' onClick={() => changeLanguge('russian')}>{tongueBttn.ru}</button>
   </div>
@@ -54,9 +54,11 @@ export default function Header() {
 
       {links.map((el, i)=> <button key={idNames[i].id} type='button' onClick={() => onClick(idNames[i].link)}>{el}</button>)}
     
-      {languages} 
+      {languages('tonge')} 
 
     </div>
+
+    {languages('mobile-tonge')}
 
 </div>
   )

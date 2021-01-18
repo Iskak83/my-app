@@ -9,7 +9,7 @@ import {LanguageContext}  from '../pages/index'
 
 const Education = () => {
 
-	const {state, change} = React.useContext(LanguageContext)
+	const {state} = React.useContext(LanguageContext)
 
 	const language = state.language 
 

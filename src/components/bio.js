@@ -8,7 +8,7 @@ import "./bio.scss"
 
 const Bio = () => {
 
-  const {state, change} = React.useContext(LanguageContext)
+  const {state} = React.useContext(LanguageContext)
 
   const [readBttn, setReadBttn] = React.useState(true);
   

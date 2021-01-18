@@ -79,12 +79,26 @@ $logo-shaddow-color: rgb(167, 189, 118);
       border: transparent;
     }
     button:hover {
-      color: rgb(111, 136, 141);
+      color: rgb(133, 163, 157);
       cursor: pointer;
     }
-    .tonges {
-      font-size: 0.5em;
+    .tonge {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.6em;
+      button {
+        outline: none;
+        color: $links-color;
+        background: transparent;
+      }
+      button:hover {
+        color: rgb(133, 163, 157);
+      }
     }
+  }
+  .mobile-tonge {
+    display: none;
   }
 }
 
@@ -173,6 +187,22 @@ $logo-shaddow-color: rgb(167, 189, 118);
           border: transparent;
           margin: 0 0px 10px 0;
         }
+      }
+    }
+    .mobile-tonge {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin-right: 20px;
+      button {
+        outline: none;
+        color: rgb(250, 237, 237);
+        background: transparent;
+      }
+      button:hover {
+        color: rgb(140, 207, 193);
       }
     }
     #nav-links-mobile,
