@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
   const [scrolled, setScrolled] = useState(0)
   
-  window.onscroll = function(){
+  document.body.onscroll = function(){
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
