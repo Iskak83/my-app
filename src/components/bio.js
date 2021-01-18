@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useContext, useState } from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import {myStory} from './data'
 import {myStoryRU} from './data-ru'
@@ -8,9 +8,9 @@ import "./bio.scss"
 
 const Bio = () => {
 
-  const {state} = React.useContext(LanguageContext)
+  const {state} = useContext(LanguageContext)
 
-  const [readBttn, setReadBttn] = React.useState(true);
+  const [readBttn, setReadBttn] = useState(true);
   
   function toggleBttn(){
     if(!readBttn) scrollTo('#bio')

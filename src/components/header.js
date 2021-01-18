@@ -1,18 +1,19 @@
-import React, { useContext, useState } from "react"
-import "./header.scss"
+import * as React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import {LanguageContext}  from '../pages/index'
 
+import "./header.scss"
+
 export default function Header() {
 
-  const [burger, setBurger] = useState(true)
+  const [burger, setBurger] = React.useState(true)
 
   function onClick(idName){
     if(!burger)setBurger(true)
     if(idName !== '') scrollTo(idName)
   }
 
-  const {state, change} = useContext(LanguageContext)
+  const {state, change} = React.useContext(LanguageContext)
 
   const language = state.language 
 

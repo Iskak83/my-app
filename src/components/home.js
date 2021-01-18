@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useContext}from "react"
 import TypeWriter from './TypeWriter'
 import {LanguageContext}  from '../pages/index'
 import "./home.scss"
@@ -6,7 +6,7 @@ import "./home.scss"
 
 const Home = () => {
 
-  const {state} = React.useContext(LanguageContext)
+  const {state} = useContext(LanguageContext)
 
   const language = state.language 
 

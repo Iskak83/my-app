@@ -1,15 +1,15 @@
-import * as React from "react"
+import React, {useContext} from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import './projects.scss';
 import {projects} from './data'
 import {projectsRU} from './data-ru'
 import {LanguageContext}  from '../pages/index'
+import './projects.scss';
 
 const Projects = () => {
 
-  const {state} = React.useContext(LanguageContext)
+  const {state} = useContext(LanguageContext)
 
   const language = state.language 
   

@@ -1,15 +1,15 @@
-import * as React from 'react';
+import React, { useContext} from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import './education.scss';
 import {education} from './data'
 import {educationRU} from './data-ru'
 import {LanguageContext}  from '../pages/index'
+import './education.scss';
 
 
 const Education = () => {
 
-	const {state} = React.useContext(LanguageContext)
+	const {state} = useContext(LanguageContext)
 
 	const language = state.language 
 
