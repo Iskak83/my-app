@@ -20,8 +20,8 @@ const Hobby = () => {
   const images = [`gym.jpg`, `centre-court.jpg`,
   `nitto-final.jpg`, `homemade-sausage.jpg`]
 
-  const imgInfo = state.language === "english" ? ['LA Fitness, Балтимор', 'Центральный корт в Уимблдоне, Лондон', 'ATP Nitto-Final в O2, Лондон', 'Шалфей и говядинa с фенхелем'] : []
-  console.log('hobbies:::', state)
+  const imgInfo = state.language === "english" ? ['LA Fitness, Baltimore', 'Centre Court in Wimbledon, London', 'ATP Nitto-Final in O2, London', 'Sage Wrap Beef with fennel'] : ['LA Fitness, Балтимор', 'Центральный корт в Уимблдоне, Лондон', 'ATP Nitto-Final в O2, Лондон', 'Шалфей и говядинa с фенхелем']
+  
 
   const hobbyInfo = state.language === "english" ? ['Hobbies', hobbies, 'read more...', '...read less'] : ['Xобби', hobbiesRU, 'больше...', '...меньше']
 
