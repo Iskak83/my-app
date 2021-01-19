@@ -39,27 +39,15 @@ $logo-shaddow-color: rgb(167, 189, 118);
         font-size: 55px;
         font-family: serif;
         width: 74px;
-        // height: 80px;
         padding: 0 0 5px;
         border-radius: 15;
         float: left;
         border-radius: 50%;
         border: solid 1px rgb(120, 133, 108);
-        // color: $logo-color;
         color: rgb(234, 243, 193);
         cursor: pointer;
       }
     }
-    // }
-    // #divider {
-    //   float: right;
-    //   transform: skew(15deg);
-    //   height: 100%;
-    //   width: 23%;
-    //   border-right: 8px solid rgb(49, 50, 49);
-    //   background-color: rgb(94, 94, 84);
-    //   margin-left: -30%;
-    // }
   }
   #nav-links-mobile,
   #nav-links {
@@ -82,34 +70,40 @@ $logo-shaddow-color: rgb(167, 189, 118);
       color: rgb(133, 163, 157);
       cursor: pointer;
     }
-    .tonge {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 0.7em;
-      border: solid 1px gray;
-      border-radius: 5px;
-      background: white;
+  }
+  .mobile-tongue,
+  .tongue {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    border: solid 1px gray;
+    border-radius: 3px;
+    background: rgb(97, 113, 101);
 
-      button {
-        outline: none;
-        color: $links-color;
-        background: transparent;
-        padding: 1px;
-        img {
-          height: 6px;
-          width: 10px;
-        }
+    button {
+      width: 38px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2px;
+      float: left;
+      outline: none;
+      color: $links-color;
+      background: transparent;
+
+      img {
+        float: right;
+        height: 9px;
+        width: 12px;
       }
-      #am-flag-icon {
-        width: 100%;
-        border-bottom: double 1.5px gray;
-        border-bottom-style: groove;
-        // padding-bottom: 1px;
-      }
-      button:hover {
-        background-color: rgb(133, 163, 157);
-      }
+    }
+    #am-flag-icon {
+      border-bottom: solid 1px gray;
+    }
+
+    button:hover {
+      background-color: rgb(133, 163, 157);
     }
   }
   .mobile-tonge {
@@ -128,9 +122,22 @@ $logo-shaddow-color: rgb(167, 189, 118);
 @media (max-width: 780px) {
   #nav-bar {
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobile-tongue {
+      display: flex;
+      margin-right: 20px;
+      button {
+        width: 35px;
+        font-size: 0.9em;
+      }
+    }
+    .tongue {
+      display: none;
+    }
     #nav-left {
       width: 165px;
-      // background-color: rgb(94, 94, 84);
 
       #divider {
         float: right;
@@ -205,40 +212,6 @@ $logo-shaddow-color: rgb(167, 189, 118);
       }
     }
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .mobile-tonge {
-      float: right;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-self: center;
-      font-size: 0.7em;
-      border: solid 1px gray;
-      border-radius: 5px;
-      // padding: 2px;
-      // height: 100%;
-      margin-right: 20px;
-      button {
-        outline: none;
-        color: rgb(250, 237, 237);
-        background: transparent;
-        padding: 2px;
-        img {
-          height: 9px;
-          width: 9px;
-        }
-      }
-      #am-flag-icon {
-        width: 100%;
-        border-bottom: double 0.5px gray;
-        // padding-bottom: 1px;
-      }
-      button:hover {
-        color: rgb(140, 207, 193);
-      }
-    }
     #nav-links-mobile,
     #nav-links {
       position: fixed;

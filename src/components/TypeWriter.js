@@ -49,6 +49,7 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
             }
 
           t =  setTimeout(() => rotateText(), newSpeed)
+          return () => clearTimeout(t)
         }
         rotateText()
        
