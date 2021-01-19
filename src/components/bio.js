@@ -21,10 +21,11 @@ const Bio = () => {
   `buckingham.png`, `virtual-grad.png`]
   
   const imgInfo =  state.language === "english" ?['Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
-  `Buckingham Palace, London`, `Fullstack virtual graduation, South Orange`] : ['Горы Ала-Арча, Кыргызстан', `Парад 2019, NYC`,
-  `Buckingham Palace, London`, `Виртуальный выпускной из Fullstack`]
+  `Buckingham Palace, London`, `Fullstack virtual graduation, South Orange`] : ['Горы Ала-Арча, Кыргызстан', `Парад 2019, Нью-Йорк`,
+  `Букингемский дворец, Лондон`, `Виртуальный выпускной из Fullstack`]
 
-  const bioInfo = state.language === "english" ? ['Biography', myStory, 'read more...', '...read less'] : ['Биография', myStoryRU, 'больше...', '...меньше']
+  const bioInfo = state.language === "english" ? ['Biography', 
+  myStory, 'read more...', '...read less'] : ['Биография', myStoryRU, 'больше...', '...меньше']
 
   return (
     <div id="bio">
