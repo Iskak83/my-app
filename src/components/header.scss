@@ -1,5 +1,5 @@
 $nav-background-color: rgba(105, 107, 107, 0.97);
-$links-color: rgb(200, 205, 209);
+$links-color: rgb(230, 230, 233);
 $logo-color: rgb(28, 76, 92);
 $logo-shaddow-color: rgb(167, 189, 118);
 
@@ -17,11 +17,12 @@ $logo-shaddow-color: rgb(167, 189, 118);
   );
   #nav-left {
     float: left;
+    display: flex;
+    align-items: center;
     height: 100%;
     #nav-logo {
       display: flex;
       align-items: center;
-      height: 100%;
       margin: 0em 0em 0em 2.5em;
       #burger {
         display: none;
@@ -29,22 +30,23 @@ $logo-shaddow-color: rgb(167, 189, 118);
 
       #logo {
         background: linear-gradient(
-          to right,
-          rgba(207, 241, 241, 0) 0%,
-          rgba(106, 131, 125, 0.15) 50%,
-          rgba(87, 136, 124, 0.3) 150%
+          to left,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(101, 122, 59, 0.2) 50%,
+          rgba(14, 0, 2, 0.3) 100%
         );
-        background-color: rgb(49, 101, 94);
+        background-color: rgb(43, 81, 84);
         text-align: center;
-        font-size: 55px;
+        font-size: 45px;
         font-family: serif;
-        width: 74px;
-        padding: 0 0 5px;
+        width: 65px;
+        padding: 0 0px 5px 1px;
         border-radius: 15;
         float: left;
         border-radius: 50%;
-        border: solid 1px rgb(120, 133, 108);
-        color: rgb(234, 243, 193);
+        border: solid 1px rgb(80, 88, 72);
+        box-shadow: 0.5px 0.5px 0.5px rgb(68, 67, 67);
+        color: rgb(187, 187, 122);
         cursor: pointer;
       }
     }
@@ -62,7 +64,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
       color: $links-color;
       font-family: FreeMono, monospace;
       font-size: 1.1em;
-      font-weight: 100;
+      font-weight: 500;
       background: transparent;
       border: transparent;
     }
@@ -113,10 +115,17 @@ $logo-shaddow-color: rgb(167, 189, 118);
   }
 }
 
+@media (max-width: 1250px) {
+  #nav-bar {
+    #nav-links {
+      width: 40%;
+    }
+  }
+}
 @media (max-width: 1050px) {
   #nav-bar {
     #nav-links {
-      width: 45%;
+      width: 50%;
     }
   }
 }
@@ -140,6 +149,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
     }
     #nav-left {
       width: 165px;
+      display: block;
 
       #divider {
         float: right;
@@ -208,6 +218,7 @@ $logo-shaddow-color: rgb(167, 189, 118);
           padding: 0;
           background: none;
           border: transparent;
+          box-shadow: none;
           margin: 0 0px 10px 0;
         }
       }
