@@ -25,17 +25,19 @@ export default function Header() {
     console.log('after', state)
   }
 
-  const languages = (tongue) => <div  className={tongue}>
-      <button type='button' id="am-flag-icon"  onClick={() => changeLanguge('english')}>
-        <div>{tongueBttn.en}</div>
-        <img alt='' src={`amer-flag.jpg`}/> 
+  const languages = (tongue) => (
+    <div  className={tongue}>
+        <button type='button' id="top-flag-icon"  onClick={() => changeLanguge('english')}>
+          <div>{tongueBttn.en}</div>
+          <img alt='' src={`amer-flag.jpg`}/> 
         </button>
-     
-     <button type='button' onClick={() => changeLanguge('russian')}>
-       <div>{tongueBttn.ru}</div>
-       <img alt='' src={`russ-flag.jpg`} id="ru-flag-icon"/>
+      
+      <button type='button' id="bottom-flag-icon" onClick={() => changeLanguge('russian')}>
+        <div>{tongueBttn.ru}</div>
+        <img alt='' src={`russ-flag.jpg`} id="ru-flag-icon"/>
       </button>
-  </div>
+    </div>
+  )
 
   const links = language === "english" ? ['Bio', 'Projects', 'Education', 'Hobbies'] : ['Био', 'Проекты', 'Образование', 'Xобби']
 

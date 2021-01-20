@@ -1,58 +1,5 @@
 $background-color: rgb(187, 220, 238);
 $title-color: rgb(202, 212, 143);
-// $sizes: 0% 0, 5% 1, 19% 1, 23% 0, 25% 0 true;
-// $bio-images: '../images/ala-archa.png' 0%, '../images/parade.png' 25%,
-//   '../images/buckingham.png' 50%, '../images/virtual-grad.png' 75%;
-
-// @keyframes fadeBioImages {
-//   @each $image, $add-percantage in $bio-images {
-//     @each $percentage, $opacity, $no-image in $sizes {
-//       #{$percentage + $add-percantage} {
-//         opacity: $opacity;
-//         background-image: url($image);
-//       }
-//     }
-//   }
-// }
-
-@keyframes fadeImg {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  35% {
-    opacity: 1;
-  }
-
-  65% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeImgInfo {
-  0% {
-    left: -100%;
-  }
-  5% {
-    left: -100%;
-  }
-  25% {
-    left: 0px;
-  }
-  75% {
-    left: 0px;
-  }
-  100% {
-    left: 100%;
-  }
-}
 
 #bio {
   display: flex;
@@ -176,11 +123,6 @@ $title-color: rgb(202, 212, 143);
         .fade-out {
           height: 260px;
           width: 260px;
-        }
-        .sliding,
-        .rotate-txt,
-        .slide-out {
-          font-size: 0.8em;
         }
       }
       #my-story {
