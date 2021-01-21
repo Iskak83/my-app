@@ -15,7 +15,7 @@ const Home = () => {
   const texts = language === "english" ? ['Trilinguist', 'Tennis fan','Cook', 'Pet lover', 'Hiker', 'Traveller'] : ['Трилингвист', 'Фанат тенниса', 'Повар-Кулинар', 'Любитель домашних животных', 'Горный турист', 'Путешественник' ]
 
 
-  const speed = 150
+  const speed = 50
   const endSpeed = 2000
   const className = 'type-writer'
   

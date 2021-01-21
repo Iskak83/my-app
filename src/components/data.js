@@ -27,10 +27,10 @@ export const myStory = [
               description: "Mixifyer is an e-commerce application that allows users to create their own account, add their favorite drinks to their shopping cart, edit their shopping cart, and place their order using credit/debit card payment.",
               bulletPoints: {
                   one: "My scope of work for this project included",
-                  two: "-Designed and implemented a persistent user’s shopping cart page to see the items in the cart and to change quantities and delete them from the cart anytime.",
-                  three: "-Created and implemented an Admin-user page with functionality to have access to all users’ information, to add or remove inventory, or to change inventory information, such as cost, in stock etc."
+                  two: "-Designing and implementing a persistent user’s shopping cart page to see the items in the cart and to change quantities and delete them from the cart anytime.",
+                  three: "-Creating an Admin-user page with functionality to have access to all users’ information, to add or remove inventory, or to change inventory information, such as cost, in stock etc."
               },
-              tools: "['Express', 'PostgreSQL', 'Sequelize', 'React','Redux', 'Stripe API']",
+              tools: "['Express', 'PostgreSQL', 'Sequelize', 'React', 'Redux', 'Stripe API']",
               gitHub: 'https://github.com/Mixifyer/Mixifyer',
               link: "https://mixifyer.herokuapp.com",
               class: "mixifyer",
@@ -45,8 +45,8 @@ export const myStory = [
               description: "Financial planning web application to create a personal budget. It allows the user to quickly see their spending habits by category, compare spending between months, and set desired spending limits.",
               bulletPoints: {
                   one: "This project involved",
-                  two: "-Built functionality to establish a persistent connection to the user's bank account through Plaid API and to fetch the user’s bank account activity including transfers, payments and spending.",
-                  three: "-Incorporated doughnut and bar charts functionality to display monthly and yearly spending using Chart.js."
+                  two: "-Building functionality to establish a persistent connection to the user's bank account through Plaid API and to fetch the user’s bank account activity including transfers, payments and spending.",
+                  three: "-Incorporating doughnut and bar charts functionality to display monthly and yearly spending using Chart.js."
               },
               tools: "['Express', 'PostgreSQL', 'React', 'Redux', 'React-Redux', 'ChartJS', 'Plaid API']",
               gitHub: 'https://github.com/Iskak83/eBudget',
