@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState, useEffect} from "react"
+import React, { useState, useEffect, useContext} from "react"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp} from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
   const [className, setClassName] = useState("")
 
-  const {state, change} = React.useContext(LanguageContext)
+  const {state, change} = useContext(LanguageContext)
 
 
   useEffect(() => {
