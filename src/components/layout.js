@@ -66,7 +66,7 @@ const Layout = ({ children, state, change }) => {
 
   return (
     <div className="layout">
-      <Header className={className} lan={state.language} change={change} id="header"/>
+      <Header className={className} lan={state} change={change} id="header"/>
         
           <div id="main">
             <main>{children}</main> 
