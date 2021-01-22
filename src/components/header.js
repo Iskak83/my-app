@@ -2,16 +2,17 @@ import * as React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import "./header.scss"
 
-export default function Header({className, state, change}) {
+export default function Header({className, lan, change}) {
   
   const [burger, setBurger] = React.useState(true)
+  console.log('header>>>>>', lan, change)
  
   function onClick(idName){
     if(!burger)setBurger(true)
     if(idName !== '') scrollTo(idName)
   }
 
-  const language = state.language 
+  const language = lan
 
   const tongueBttn = language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'анг', ru: 'рус'}
 

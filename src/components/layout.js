@@ -20,7 +20,7 @@ const Layout = ({ children, state, change }) => {
 
   const [className, setClassName] = useState("")
 
-  // const {state, change} = useContext(LanguageContext)
+  console.log('state', state, change)
 
 
   useEffect(() => {
@@ -66,7 +66,7 @@ const Layout = ({ children, state, change }) => {
 
   return (
     <div className="layout">
-      <Header className={className} state={state} change={change} id="header"/>
+      <Header className={className} lan={state.language} change={change} id="header"/>
         
           <div id="main">
             <main>{children}</main> 
