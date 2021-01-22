@@ -24,7 +24,7 @@ const IndexPage = () => {
 
   return (  
     <LanguageContext.Provider value={{state: state, change: action}} >
-        <Layout>
+        <Layout state={state} change={action}>
           
           {/* <Header id="header"/> */}
             <SEO title='Iskak Mantyubetov'/>

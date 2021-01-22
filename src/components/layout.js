@@ -10,17 +10,17 @@ import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp} from "@fortawesome/free-solid-svg-icons";
 import Header from "./header"
-import {LanguageContext}  from '../pages/index'
+// import {LanguageContext}  from '../pages/index'
 import "./layout.scss"
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, state, change }) => {
 
   const [toTopBttn, setToTopBttn] = useState({id: "to-top-bttn-hidden", toggle: true})
 
   const [className, setClassName] = useState("")
 
-  const {state, change} = useContext(LanguageContext)
+  // const {state, change} = useContext(LanguageContext)
 
 
   useEffect(() => {
