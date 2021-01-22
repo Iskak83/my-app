@@ -4,10 +4,10 @@ import {LanguageContext}  from '../pages/index'
 
 import "./header.scss"
 
-export default function Header() {
+export default function Header({offsetTop}) {
 
   const [burger, setBurger] = React.useState(true)
-
+ 
   function onClick(idName){
     if(!burger)setBurger(true)
     if(idName !== '') scrollTo(idName)
@@ -22,7 +22,6 @@ export default function Header() {
 
   const changeLanguge = (language) => {
     change.languageChanged(language)
-    console.log('after', state)
   }
 
   const languages = (tongue) => (
@@ -41,7 +40,9 @@ export default function Header() {
 
   const links = language === "english" ? ['Bio', 'Projects', 'Education', 'Hobbies'] : ['Био', 'Проекты', 'Образование', 'Xобби']
 
-  const idNames = [{id: 1, link: '#bio'}, {id: 2, link: '#projects'}, {id: 3, link: '#education'}, {id: 4, link: '#hobbies'}]
+  const idNames = [{id: 1, link: '#bio'}, {id: 2, link: '#projects'}, {id: 3, link: '#education'}, {id: 4, link: '#hobby'}]
+
+  console.log('header>>>>>', offsetTop)
 
   return (
       <div id="nav-bar">
@@ -62,7 +63,13 @@ export default function Header() {
         </div>
         <div id={burger ? "nav-links" : "nav-links-mobile"}> 
 
-          {links.map((el, i)=> <button key={idNames[i].id} type='button' onClick={() => onClick(idNames[i].link)}>{el}</button>)}
+          {links.map((el, i)=> {
+            
+            const className = idNames[i].link === "#" + offsetTop ? 'link-offsetTop' : 'nothing'
+            
+            return <button key={idNames[i].id} type='button' className={className} onClick={() => onClick(idNames[i].link)}>{el}</button>
+          
+          })}
         
           {languages('tongue')} 
 

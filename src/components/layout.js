@@ -1,43 +1,74 @@
 /**
  * Layout component that queries for data
- * with Gatsby's useStaticQuery component
+ * with Gatsby"s useStaticQuery component
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
 import React, { useState, useEffect} from "react"
 import PropTypes from "prop-types"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp} from "@fortawesome/free-solid-svg-icons";
+import Header from "./header"
 import "./layout.scss"
 
 
 const Layout = ({ children }) => {
 
-  const [scrolled, setScrolled] = useState(0)
+  const [toTopBttn, setToTopBttn] = useState({id: "to-top-bttn-hidden", toggle: true})
+
+  const [className, setClassName] = useState("")
 
   useEffect(() => {
-    window.onscroll = function(){
 
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const innerHeight = window.innerHeight/2;
+
+    const bioOffsetTop = document.getElementById("bio").offsetTop;
+   
+    const projectsOffsetTop = document.getElementById("projects").offsetTop;
+    
+    const educationOffsetTop = document.getElementById("education").offsetTop;
   
-    setScrolled(winScroll)
-  }}, [])
+    const hobbyOffsetTop = document.getElementById("hobby").offsetTop;
+  
+
+    window.onscroll = function(){
+   
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+    if(bioOffsetTop - 51 > winScroll && className !== "") setClassName("")
+      
+    if(bioOffsetTop - 50  < winScroll && projectsOffsetTop - innerHeight > winScroll && className !== "bio") setClassName("bio")
+    
+    if(projectsOffsetTop - 50 < winScroll && educationOffsetTop - innerHeight  > winScroll && className !== "projects")setClassName("projects")
+  
+
+    if(educationOffsetTop - 50 < winScroll && hobbyOffsetTop - innerHeight  > winScroll && className !== "education")setClassName("education")
+      
+    if(hobbyOffsetTop - innerHeight < winScroll && className !== "hobby"){
+      setClassName("hobby")
+    }
+    if(hobbyOffsetTop < winScroll && toTopBttn.toggle) setToTopBttn({id: "to-top-bttn-shown", toggle: false})
+    
+    if(winScroll < hobbyOffsetTop && !toTopBttn.toggle) setToTopBttn({id: "to-top-bttn-hidden", toggle: true})
+    
+  }
+  
+}, [toTopBttn, className])
 
   const scrollTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
+		window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const toTopBttnVisible = scrolled > 4350 ? "to-top-bttn-shown" : "to-top-bttn-hidden";
-  
   return (
     <div className="layout">
+      <Header offsetTop={className} id="header"/>
         
           <div id="main">
             <main>{children}</main> 
           </div>
 
-            <div id={toTopBttnVisible}>
+            <div id={toTopBttn.id}>
               <button type="button"  onClick={scrollTop} className="scroll-to-top-bttn">
                   <FontAwesomeIcon icon={faAngleUp} />
               </button>

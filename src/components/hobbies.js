@@ -8,6 +8,7 @@ import './hobbies.scss'
 
 const Hobby = () => {
 
+  console.log('hobby>>>>>>>>')
   const {state} = React.useContext(LanguageContext)
 
   const [readBttn, setReadBttn] = React.useState(true);
