@@ -1,11 +1,9 @@
 import * as React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import {LanguageContext}  from '../pages/index'
-
 import "./header.scss"
 
-export default function Header({offsetTop}) {
-
+export default function Header({className, state, change}) {
+  
   const [burger, setBurger] = React.useState(true)
  
   function onClick(idName){
@@ -13,11 +11,9 @@ export default function Header({offsetTop}) {
     if(idName !== '') scrollTo(idName)
   }
 
-  const {state, change} = React.useContext(LanguageContext)
-
   const language = state.language 
 
-  const tongueBttn = state.language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'анг', ru: 'рус'}
+  const tongueBttn = language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'анг', ru: 'рус'}
 
 
   const changeLanguge = (language) => {
@@ -42,7 +38,7 @@ export default function Header({offsetTop}) {
 
   const idNames = [{id: 1, link: '#bio'}, {id: 2, link: '#projects'}, {id: 3, link: '#education'}, {id: 4, link: '#hobby'}]
 
-  console.log('header>>>>>', offsetTop)
+  console.log('header>>>>>', className)
 
   return (
       <div id="nav-bar">
@@ -65,9 +61,9 @@ export default function Header({offsetTop}) {
 
           {links.map((el, i)=> {
             
-            const className = idNames[i].link === "#" + offsetTop ? 'link-offsetTop' : 'nothing'
+            const classname = idNames[i].link === "#" + className ? 'link-offsetTop' : 'nothing'
             
-            return <button key={idNames[i].id} type='button' className={className} onClick={() => onClick(idNames[i].link)}>{el}</button>
+            return <button key={idNames[i].id} type='button' className={classname} onClick={() => onClick(idNames[i].link)}>{el}</button>
           
           })}
         

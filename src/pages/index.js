@@ -15,7 +15,7 @@ import "./styles.scss"
 export const LanguageContext = React.createContext()
 
 const IndexPage = () => {
-
+  
   const [state, dispatch] = React.useReducer(reducer, initialState)
  
   const action = {

@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp} from "@fortawesome/free-solid-svg-icons";
 import Header from "./header"
+import {LanguageContext}  from '../pages/index'
 import "./layout.scss"
 
 
@@ -18,6 +19,9 @@ const Layout = ({ children }) => {
   const [toTopBttn, setToTopBttn] = useState({id: "to-top-bttn-hidden", toggle: true})
 
   const [className, setClassName] = useState("")
+
+  const {state, change} = React.useContext(LanguageContext)
+
 
   useEffect(() => {
 
@@ -34,27 +38,27 @@ const Layout = ({ children }) => {
 
     window.onscroll = function(){
    
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-    if(bioOffsetTop - 51 > winScroll && className !== "") setClassName("")
+      if(bioOffsetTop - 51 > winScroll && className !== "") setClassName("")
+        
+      if(bioOffsetTop - 50  < winScroll && projectsOffsetTop - innerHeight > winScroll && className !== "bio") setClassName("bio")
       
-    if(bioOffsetTop - 50  < winScroll && projectsOffsetTop - innerHeight > winScroll && className !== "bio") setClassName("bio")
+      if(projectsOffsetTop - 50 < winScroll && educationOffsetTop - innerHeight  > winScroll && className !== "projects")setClassName("projects")
     
-    if(projectsOffsetTop - 50 < winScroll && educationOffsetTop - innerHeight  > winScroll && className !== "projects")setClassName("projects")
-  
 
-    if(educationOffsetTop - 50 < winScroll && hobbyOffsetTop - innerHeight  > winScroll && className !== "education")setClassName("education")
+      if(educationOffsetTop - 50 < winScroll && hobbyOffsetTop - innerHeight  > winScroll && className !== "education")setClassName("education")
+        
+      if(hobbyOffsetTop - innerHeight < winScroll && className !== "hobby"){
+        setClassName("hobby")
+      }
+      if(hobbyOffsetTop < winScroll && toTopBttn.toggle) setToTopBttn({id: "to-top-bttn-shown", toggle: false})
       
-    if(hobbyOffsetTop - innerHeight < winScroll && className !== "hobby"){
-      setClassName("hobby")
+      if(winScroll < hobbyOffsetTop && !toTopBttn.toggle) setToTopBttn({id: "to-top-bttn-hidden", toggle: true})
+    
     }
-    if(hobbyOffsetTop < winScroll && toTopBttn.toggle) setToTopBttn({id: "to-top-bttn-shown", toggle: false})
-    
-    if(winScroll < hobbyOffsetTop && !toTopBttn.toggle) setToTopBttn({id: "to-top-bttn-hidden", toggle: true})
-    
-  }
   
-}, [toTopBttn, className])
+  }, [toTopBttn, className])
 
   const scrollTop = () => {
 		window.scrollTo({ top: 0, behavior: "smooth" });
@@ -62,7 +66,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      <Header offsetTop={className} id="header"/>
+      <Header className={className} state={state} change={change} id="header"/>
         
           <div id="main">
             <main>{children}</main> 

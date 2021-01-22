@@ -15,6 +15,8 @@ const Education = () => {
 
 	const eduInfo = language === "english" ? education : educationRU
 
+	console.log('eduuuuuu>>>>>')
+
 	return (
 		<div  id="education">
 			<div className="paragraph-title-edu">
