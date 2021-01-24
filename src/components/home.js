@@ -18,8 +18,6 @@ const Home = () => {
   const speed = 50
   const endSpeed = 2000
   const className = 'type-writer'
-
-  console.log('HOME>>>>>')
   
   return (
     <div id="home">

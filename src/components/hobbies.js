@@ -24,7 +24,7 @@ const Hobby = () => {
   
 
   const hobbyInfo = state.language === "english" ? ['Hobbies', hobbies, 'read more...', '...read less'] : ['Xобби', hobbiesRU, 'больше...', '...меньше']
- console.log('hobby>>>>>')
+  
     return (
       <div id="hobby">
           <div className="paragraph-title">

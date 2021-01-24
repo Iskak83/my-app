@@ -6,7 +6,6 @@ import Bio from '../components/bio';
 import Projects from '../components/projects';
 import Education from '../components/education';
 import Hobby from '../components/hobbies'
-// import Header from "../components/header"
 import Footer from "../components/footer"
 import {initialState, CHANGE_LANGUAGE, reducer} from '../components/state'
 import "./styles.scss"
@@ -24,9 +23,7 @@ const IndexPage = () => {
 
   return (  
     <LanguageContext.Provider value={{state: state, change: action}} >
-        <Layout state={state.language} change={action}>
-          
-          {/* <Header id="header"/> */}
+        <Layout language={state.language} change={action}>
             <SEO title='Iskak Mantyubetov'/>
             <Home/>
             <Bio/>

@@ -5,22 +5,21 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState, useEffect, useContext} from "react"
+import React, { useState, useEffect} from "react"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp} from "@fortawesome/free-solid-svg-icons";
 import Header from "./header"
-// import {LanguageContext}  from '../pages/index'
 import "./layout.scss"
 
 
-const Layout = ({ children, state, change }) => {
+const Layout = ({ children, language, change }) => {
 
   const [toTopBttn, setToTopBttn] = useState({id: "to-top-bttn-hidden", toggle: true})
 
   const [className, setClassName] = useState("")
 
-  console.log('state', state, change)
+  console.log('state', change)
 
 
   useEffect(() => {
@@ -66,7 +65,7 @@ const Layout = ({ children, state, change }) => {
 
   return (
     <div className="layout">
-      <Header className={className} lan={state} change={change} id="header"/>
+      <Header className={className} language={language} change={change} id="header"/>
         
           <div id="main">
             <main>{children}</main> 
