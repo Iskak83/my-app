@@ -29,7 +29,6 @@ const IndexPage = () => {
             <Bio/>
             <Projects/>
             <Education />
-
             <Hobby />
             <Footer/>
           

@@ -16,7 +16,6 @@ const Projects = () => {
   const projectsInfo = language === "english" ? projects : projectsRU 
   const stack = language === "english" ? 'stack' : 'стек'
  
-
   return (
       <div id="projects">
         <img src={require("../images/project.png")} alt="" className="project-img"/>
