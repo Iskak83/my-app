@@ -54,7 +54,7 @@ const styles = {
 		borderRight: '1px solid  #rgb(247, 240, 240)'
 	},
 	'icon': {
-		background: '#fff'
+		background: 'white'
 	}
 };
 
