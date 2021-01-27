@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="80" />
+  <a href="https://quizzical-euclid-762bca.netlify.app/">
+    <img alt="Gatsby" src="static/my-logo.png" width="80" />
   </a>
 </p>
 <h1 align="center">
