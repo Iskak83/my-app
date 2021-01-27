@@ -17,3 +17,6 @@
 * [SASS](https://sass-lang.com/) 
 
 #### Implemented custom modules for image and text animations, typewriting and dropdown menu for mobile version.
+
+# Author
+<h5>Iskak Mantyubetov </h5> 
