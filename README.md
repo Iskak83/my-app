@@ -6,6 +6,14 @@
 <h1 align="center">
  izkak.com
 </h1>
-# My personal web application/portfolio. 
-I built it using Gatsby/React and SASS for styling. 
-Implemented custom modules for image and text animations, typewriting and dropdown menu for mobile version.
+
+
+# About 
+
+## My personal web application/portfolio. 
+
+**I built it using:** 
+* [Gatsby/React](https://www.gatsbyjs.com/docs/) 
+* [SASS](https://sass-lang.com/) 
+
+#### Implemented custom modules for image and text animations, typewriting and dropdown menu for mobile version.
