@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://quizzical-euclid-762bca.netlify.app/">
-    <img alt="im" src=".static/my-logo.png" width="80" />
+    <img alt="im" src="static/my-logo.png" width="80" />
   </a>
 </p>
 <h1 align="center">
