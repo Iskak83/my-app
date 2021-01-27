@@ -4,9 +4,9 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+ izkak.com
 </h1>
-
+"Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg"
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
