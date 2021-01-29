@@ -21,7 +21,7 @@ const Home = () => {
   
   return (
     <div id="home">
-      <img alt="" src={`ala-archa.png`} />
+       <img alt="" src={`ala-archa.png`} className='image'/>
       <div className="home">
         	<h1>{titles.name}</h1>
           <h3>{titles.profession}</h3>
