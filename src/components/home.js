@@ -38,10 +38,10 @@ const Home = () => {
         const imageData = data.desktop.childImageSharp.fluid;
         
 				return (
-          <div id="home">
+          // <div id="home">
 					<BackgroundImage
 						Tag="section"
-						className="home"
+						id="home"
 						fluid={imageData}
 						backgroundColor={`#333`}
 					>
@@ -51,7 +51,7 @@ const Home = () => {
                 <TypeWriter texts={texts} speed={speed} endSpeed={endSpeed} className={className} />
    
 					</BackgroundImage>
-          </div>
+          // </div>
 				);
 			}}
 		/>
