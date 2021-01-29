@@ -21,6 +21,7 @@ const Home = () => {
   
   return (
     <div id="home">
+      <img alt="" src={`ala-archa.png`} />
       <div className="home">
         	<h1>{titles.name}</h1>
           <h3>{titles.profession}</h3>
