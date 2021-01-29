@@ -3,7 +3,6 @@ module.exports = {
     title: `Software Engineer`,
 		description: `Portfolio Site`,
     author: `Iskak Mantyubetov`,
-    image: `src/images/my-logo.png`
   },
   
   plugins: [
@@ -13,8 +12,6 @@ module.exports = {
         implementation: require("sass"),
       },
     }, 
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

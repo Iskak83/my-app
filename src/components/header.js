@@ -48,8 +48,7 @@ export default function Header({className, language, change}) {
                 <div id="lineThree"></div>
               </button>
             </div>
-            <img alt="" src={require('../images/logo.png')} id="my-logo-img"/>
-            {/* <button onClick={() => onClick('#home')} id="logo" >im</button> */}
+            <button onClick={() => onClick('#home')} id="logo" >im</button>
           </div>
           <div id="divider"/>
         </div>
