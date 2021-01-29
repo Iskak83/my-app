@@ -64,7 +64,8 @@ const Layout = ({ children, language, change }) => {
   };
 
   return (
-    <div className="layout">
+    // <div className="layout">
+    <React.Fragment>
       <Header className={className} language={language} change={change} id="header"/>
         
           <div id="main">
@@ -77,7 +78,7 @@ const Layout = ({ children, language, change }) => {
               </button>
           </div> 
 
-    </div>  
+    </React.Fragment>
    
   )
 }
