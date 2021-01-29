@@ -12,6 +12,22 @@ $title-color: rgb(202, 212, 143);
     width: 220px;
     padding: 0 0 2em 0;
   }
+  .paragraph-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0 0 3%;
+    h1 {
+      font-family: FreeMono, monospace;
+      color: $title-color;
+    }
+    h3 {
+      color: $title-color;
+      font-size: 20px;
+      margin: 5px 10px;
+    }
+  }
 
   .project-container {
     border-radius: 20px;

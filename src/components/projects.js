@@ -18,7 +18,12 @@ const Projects = () => {
  
   return (
       <div id="projects">
-        <img src={require("../images/project.png")} alt="" className="project-img"/>
+        {/* <img src={require("../images/project.png")} alt="" className="project-img"/> */}
+         <div className="paragraph-title">
+            <h3>{"<<<  "}</h3> 
+            <h1>  Projects  </h1>
+            <h3>{"  >>>"}</h3>
+          </div>
         <div className="project-container">
 
           {projectsInfo.map( (el, inx) => (
