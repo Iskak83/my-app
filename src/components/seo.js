@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 // import ogImage from "../images/outlier-wash-crop.jpeg"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +21,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -29,6 +30,7 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const defualtImage = image || site.siteMetadata.image
 
   return (
     <Helmet
@@ -54,10 +56,10 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
-        //    {
-        //   property: `og:image`,
-        //   content: `https://ryanpsmith.dev/${ogImage}`,
-        // },
+           {
+          property: `og:image`,
+          content: defualtImage,
+        },
         {
           name: `twitter:card`,
           content: `summary`,

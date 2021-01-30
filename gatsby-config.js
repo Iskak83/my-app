@@ -3,6 +3,7 @@ module.exports = {
     title: `Software Engineer`,
 		description: `Portfolio Site`,
     author: `Iskak Mantyubetov`,
+    image: `logo.png`
   },
   
   plugins: [
@@ -16,13 +17,13 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    // {
-		// 	resolve: `gatsby-source-filesystem`,
-		// 	options: {
-		// 		name: `images`,
-		// 		path: `${__dirname}/src/images`
-		// 	}
-		// },
+    {
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: `${__dirname}/src/images`
+			}
+		},
     {
 			resolve: `gatsby-plugin-manifest`,
 			options: {
