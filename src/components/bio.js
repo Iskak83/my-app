@@ -17,7 +17,7 @@ const Bio = () => {
     setReadBttn(!readBttn)    
   }
 
-  const images = [`ala-archa.png`, `parade.png`,
+  const images = [`parade.png`,
   `buckingham.png`, `virtual-grad.png`]
   
   const imgInfo =  state.language === "english" ?['Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
