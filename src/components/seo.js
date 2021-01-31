@@ -44,6 +44,10 @@ function SEO({ description, lang, meta, title, image}) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
+          property: `og:url`,
+          content: `${url}`,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
@@ -58,11 +62,12 @@ function SEO({ description, lang, meta, title, image}) {
         {
           property: `og:type`,
           content: `website`,
-        },
-           {
+        }, 
+        {
           property: `og:image`,
           content: `${url}${ogImage}`,
         },
+          
         {
           name: `twitter:card`,
           content: `summary`,
