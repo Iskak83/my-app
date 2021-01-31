@@ -3,21 +3,21 @@ module.exports = {
     title: `Software Engineer`,
 		description: `Portfolio Site`,
     author: `Iskak Mantyubetov`,
-    image: `/images/defualt-site-image.jpg`,
+    image: `/images/default-site-image.jpg`,
     url: `https://www.iskak.dev`
   },
   
   plugins: [
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: `gatsby-plugin-sass`,
       options: {
-        implementation: require("sass"),
+        implementation: require(`sass`),
       },
     }, 
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -37,6 +37,6 @@ module.exports = {
 				icon: `src/images/logo-icon.png`
 			}
     },
-    "gatsby-plugin-smoothscroll"
+    `gatsby-plugin-smoothscroll`
   ],
 };
