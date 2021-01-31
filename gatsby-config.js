@@ -3,8 +3,8 @@ module.exports = {
     title: `Software Engineer`,
 		description: `Portfolio Site`,
     author: `Iskak Mantyubetov`,
-    // image: `logo.png`,
-    // url: "https://www.iskak.dev"
+    image: `/images/ala-archa.png`,
+    url: `https://www.iskak.dev`
   },
   
   plugins: [
