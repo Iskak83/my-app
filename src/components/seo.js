@@ -60,10 +60,10 @@ function SEO({ description, lang, meta, title, image}) {
           property: `og:type`,
           content: `website`,
         }, 
-        {
-          property: `og:image`,
-          content: `${url}${ogImage}`,
-        },
+        // {
+        //   property: `og:image`,
+        //   content: `${url}${ogImage}`,
+        // },
           
         {
           name: `twitter:card`,

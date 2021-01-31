@@ -17,12 +17,12 @@ const Bio = () => {
     setReadBttn(!readBttn)    
   }
 
-  const images = [`a-default-site-image.jpg`, `ala-archa.png`, `parade.png`,
-  `buckingham.png`, `virtual-grad.png`]
+  const images = [`virtual-grad.png`, `a-default-site-image.jpg`, `ala-archa.png`, `parade.png`,
+  `buckingham.png`]
   
-  const imgInfo =  state.language === "english" ? ['Red Hook, NY', 'Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
-  `Buckingham Palace, London`, `Fullstack virtual graduation, South Orange`] : ['Ред-Хук, Нью-Йорк', 'Горы Ала-Арча, Кыргызстан', `Парад 2019, Нью-Йорк`,
-  `Букингемский дворец, Лондон`, `Виртуальный выпускной из Fullstack`]
+  const imgInfo =  state.language === "english" ? [`Fullstack virtual graduation, South Orange`, 'Red Hook, NY', 'Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
+  `Buckingham Palace, London`] : [`Виртуальный выпускной из Fullstack`, 'Ред-Хук, Нью-Йорк', 'Горы Ала-Арча, Кыргызстан', `Парад 2019, Нью-Йорк`,
+  `Букингемский дворец, Лондон`]
 
   const bioInfo = state.language === "english" ? ['Biography', 
   myStory, 'read more...', '...read less'] : ['Биография', myStoryRU, 'больше...', '...меньше']
