@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: "Software Engineer",
-		description: "Portfolio Site",
-    author: "Iskak Mantyubetov",
-    image: "/image/logo.png",
-    url: "https://www.iskak.dev"
+    title: `Software Engineer`,
+		description: `Portfolio Site`,
+    author: `Iskak Mantyubetov`,
+    // image: `logo.png`,
+    // url: "https://www.iskak.dev"
   },
   
   plugins: [
     {
-      resolve: 'gatsby-plugin-sass',
+      resolve: "gatsby-plugin-sass",
       options: {
         implementation: require("sass"),
       },
