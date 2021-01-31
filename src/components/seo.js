@@ -31,6 +31,7 @@ function SEO({ description, lang, meta, title, image}) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  console.log('>>>>>>', site.siteMetadata)
   const ogImage = image || site.siteMetadata.defaultImage
   const url = site.siteMetadata.siteUrl
 

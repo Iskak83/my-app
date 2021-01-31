@@ -3,7 +3,7 @@ module.exports = {
     title: `Software Engineer`,
 		description: `Portfolio Site`,
     author: `Iskak Mantyubetov`,
-    image: `/images/ala-archa.png`,
+    image: `/images/ala-archa.jpg`,
     url: `https://www.iskak.dev`
   },
   
