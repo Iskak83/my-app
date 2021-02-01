@@ -1,6 +1,8 @@
 import * as React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import BurgerMenu from './BurgerMenu'
 import "./header.scss"
+
 
 export default function Header({className, language, change}) {
   
@@ -35,19 +37,13 @@ export default function Header({className, language, change}) {
 
   const idNames = [{id: 1, link: '#bio'}, {id: 2, link: '#projects'}, {id: 3, link: '#education'}, {id: 4, link: '#hobby'}]
 
-
   return (
       <div id="nav-bar">
         <div id="nav-left">
           <div id="nav-logo">
-            <div id="burger-container">
-              <button onClick={() => setBurger(!burger)} id={burger ? "burger" : "x"}>
-              
-                <div id="lineOne"></div>
-                <div id="lineTwo"></div>
-                <div id="lineThree"></div>
-              </button>
-            </div>
+
+            <BurgerMenu setBurger={setBurger} burger={burger}/>
+
             <button onClick={() => onClick('#home')} id="logo" >im</button>
           </div>
           <div id="divider"/>
