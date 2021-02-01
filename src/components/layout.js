@@ -64,7 +64,6 @@ const Layout = ({ children, language, change }) => {
   };
 
   return (
-    // <div className="layout">
     <React.Fragment>
       <Header className={className} language={language} change={change} id="header"/>
         
@@ -77,9 +76,7 @@ const Layout = ({ children, language, change }) => {
                   <FontAwesomeIcon icon={faAngleUp} />
               </button>
           </div> 
-
     </React.Fragment>
-   
   )
 }
 

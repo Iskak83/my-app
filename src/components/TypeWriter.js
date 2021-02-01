@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from 'react'
 
-
 const TypeWriter = ({texts, speed, endSpeed, className}) => {
+    
     const [text, setText] = useState('')
   
-   
   useEffect(() => {
-      
       
         let i = 0;
         let isDeleting  = false;
@@ -35,7 +33,6 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
                 newSpeed = endSpeed
                 isDeleting = true
                 
-               
             }else if(isDeleting && txt === ''){
               
                 isDeleting = false
@@ -51,16 +48,17 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
           t =  setTimeout(() => rotateText(), newSpeed)
           return () => clearTimeout(t)
         }
+        
         rotateText()
-       
         
         return () => clearTimeout(t)
     }, [texts, speed, endSpeed])
    
 
     return(
-        <div className={className}>{text}</div>
+            <div className={className}>{text}</div>
     )
 }
+
 export default TypeWriter
 

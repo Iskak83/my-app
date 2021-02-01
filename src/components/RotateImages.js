@@ -25,7 +25,7 @@ const RotateImages = ({images, imgInfo, anime}) =>{
             if(j === 2){ 
                 setClassFade('fading')
                 setClassSlide('sliding')
-                speed = 4300
+                speed = 3300
             }else if(j===3) {
                 setClassFade('fade-out')
                 setClassSlide('slide-out')
@@ -52,17 +52,13 @@ const RotateImages = ({images, imgInfo, anime}) =>{
 
     }, [images, imgInfo])
 
- 
-   
-
     return(
-        <div id="fade-img">
-             <img src={image} alt='' className={anime === 'fade' ? classFade : classSlide}/>
-            <div className={anime === 'fade' ? classSlide : classFade }>{imageInfo}</div>
-        
-        </div>
+           <div id="fade-img">
+                <img src={image} alt='' className={anime === 'fade' ? classFade : classSlide}/>
+                <div className={anime === 'fade' ? classSlide : classFade }>{imageInfo}</div>
+            
+            </div>
     )
-   
 }
 
 export default RotateImages

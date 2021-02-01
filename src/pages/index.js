@@ -31,10 +31,8 @@ const IndexPage = () => {
             <Education />
             <Hobby />
             <Footer/>
-          
         </Layout> 
     </LanguageContext.Provider>
-    
   )
 }
 

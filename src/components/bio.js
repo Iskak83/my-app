@@ -17,19 +17,16 @@ const Bio = () => {
     setReadBttn(!readBttn)    
   }
 
-  const images = [`virtual-grad.png`, `a-default-site-image.jpg`, `ala-archa.png`, `parade.png`,
-  `buckingham.png`]
+  const images = [`virtual-grad.png`, `hyde-park.jpg`, `ala-archa.png`, `parade.png`, `a-default-site-image.jpg`]
   
-  const imgInfo =  state.language === "english" ? [`Fullstack virtual graduation, South Orange`, 'Red Hook, NY', 'Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`,
-  `Buckingham Palace, London`] : [`Виртуальный выпускной из Fullstack`, 'Ред-Хук, Нью-Йорк', 'Горы Ала-Арча, Кыргызстан', `Парад 2019, Нью-Йорк`,
-  `Букингемский дворец, Лондон`]
+  const imgInfo =  state.language === "english" ? [`Fullstack virtual graduation, South Orange`, `Hyde Park, London`, 'Ala-Archa Mountain, Kyrgyzstan', `Parade 2019, NYC`, 'Red Hook, NY'] : [`Виртуальный выпускной из Fullstack`,
+  `Гайд-Парк, Лондон`, 'Горы Ала-Арча, Кыргызстан', `Парад 2019, Нью-Йорк`, 'Ред-Хук, Нью-Йорк']
 
   const bioInfo = state.language === "english" ? ['Biography', 
   myStory, 'read more...', '...read less'] : ['Биография', myStoryRU, 'больше...', '...меньше']
 
   return (
     <div id="bio">
-
         <div className="paragraph-title">
           <h3>{"<<<  "}</h3> 
           <h1>{bioInfo[0]}</h1>
