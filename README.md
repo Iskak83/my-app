@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.iskak.dev/">
-    <img alt="im" src="static/logo.png" width="120" />
+    <img alt="im" src="src/images/logo-icon.png" width="200" />
   </a>
 </p>
 <h1 align="center">
