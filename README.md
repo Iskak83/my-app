@@ -7,16 +7,17 @@
  www.iskak.dev
 </h1>
 
+# About
 
-# About 
+## My personal web application/portfolio.
 
-## My personal web application/portfolio. 
+**I built it using:**
 
-**I built it using:** 
-* [Gatsby/React](https://www.gatsbyjs.com/docs/) 
-* [SASS](https://sass-lang.com/) 
+- [Gatsby/React](https://www.gatsbyjs.com/docs/)
+- [SASS](https://sass-lang.com/)
 
- I implemented ***custom modules***  **RotateImages**  and **TypeWriter** for animations,  and **BurgerMenu** (dropdown menu) for ***mobile version*** to avoid external dependencies. 
+I implemented **_custom modules_** **RotateImages** and **TypeWriter** for animations, and **Burger** (dropdown menu) for **_mobile version_** to avoid external dependencies.
 
 # Author
-<h5>Iskak Mantyubetov </h5> 
+
+<h5>Iskak Mantyubetov </h5>
