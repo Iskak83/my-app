@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BurgerMenu = ({setBurger, burger}) => (
+const Burger = ({setBurger, burger}) => (
 <div id="burger-container">
     <button onClick={() => setBurger(!burger)} id={burger ? "burger" : "x"}>
         <div id="lineOne"></div>
@@ -9,4 +9,4 @@ const BurgerMenu = ({setBurger, burger}) => (
     </button>
 </div>)
 
-export default BurgerMenu
+export default Burger
