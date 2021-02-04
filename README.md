@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.iskak.dev/">
-    <img alt="im" src="static/logo.png" width="120" />
+    <img alt="im" src="src/images/logo-icon.png" width="200" />
   </a>
 </p>
 <h1 align="center">
@@ -16,7 +16,7 @@
 * [Gatsby/React](https://www.gatsbyjs.com/docs/) 
 * [SASS](https://sass-lang.com/) 
 
-#### Implemented custom modules for image and text animations, typewriting and dropdown menu for mobile version.
+ I implemented ***custom modules***  **RotateImages**  and **TypeWriter** for animations,  and **BurgerMenu** (dropdown menu) for ***mobile version*** to avoid external dependencies. 
 
 # Author
 <h5>Iskak Mantyubetov </h5> 
