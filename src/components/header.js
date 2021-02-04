@@ -1,6 +1,6 @@
 import * as React from "react"
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import BurgerMenu from './BurgerMenu'
+import Burger from './Burger'
 import "./header.scss"
 
 
@@ -42,7 +42,7 @@ export default function Header({className, language, change}) {
         <div id="nav-left">
           <div id="nav-logo">
 
-            <BurgerMenu setBurger={setBurger} burger={burger}/>
+            <Burger setBurger={setBurger} burger={burger}/>
 
             <button onClick={() => onClick('#home')} id="logo" >im</button>
           </div>
