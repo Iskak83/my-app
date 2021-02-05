@@ -11,7 +11,7 @@
 
 ## My personal web application/portfolio.
 
-**I built it using:**
+**I built it using the following technologies:**
 
 - [Gatsby/React](https://www.gatsbyjs.com/docs/)
 - [SASS](https://sass-lang.com/)
