@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from 'react'
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Burger from './Burger'
-import "./header.scss"
+import './header.scss'
 
 
 export default function Header({className, language, change}) {
@@ -21,38 +21,38 @@ export default function Header({className, language, change}) {
 
   const languages = (tongue) => (
     <div  className={tongue}>
-        <button type='button' id="top-flag-icon"  onClick={() => changeLanguge('english')}>
+        <button type='button' id='top-flag-icon'  onClick={() => changeLanguge('english')}>
           <div>{tongueBttn.en}</div>
           <img alt='' src={`amer-flag.jpg`}/> 
         </button>
       
-      <button type='button' id="bottom-flag-icon" onClick={() => changeLanguge('russian')}>
+      <button type='button' id='bottom-flag-icon' onClick={() => changeLanguge('russian')}>
         <div>{tongueBttn.ru}</div>
-        <img alt='' src={`russ-flag.jpg`} id="ru-flag-icon"/>
+        <img alt='' src={`russ-flag.jpg`} id='ru-flag-icon'/>
       </button>
     </div>
   )
 
-  const links = language === "english" ? ['Bio', 'Projects', 'Education', 'Hobbies'] : ['Био', 'Проекты', 'Образование', 'Xобби']
+  const links = language === 'english' ? ['Bio', 'Projects', 'Education', 'Hobbies'] : ['Био', 'Проекты', 'Образование', 'Xобби']
 
   const idNames = [{id: 1, link: '#bio'}, {id: 2, link: '#projects'}, {id: 3, link: '#education'}, {id: 4, link: '#hobby'}]
 
   return (
-      <div id="nav-bar">
-        <div id="nav-left">
-          <div id="nav-logo">
+      <div id='nav-bar'>
+        <div id='nav-left'>
+          <div id='nav-logo'>
 
             <Burger setBurger={setBurger} burger={burger}/>
 
-            <button onClick={() => onClick('#home')} id="logo" >im</button>
+            <button onClick={() => onClick('#home')} id='logo' >im</button>
           </div>
-          <div id="divider"/>
+          <div id='divider'/>
         </div>
-        <div id={burger ? "nav-links" : "nav-links-mobile"}> 
+        <div id={burger ? 'nav-links' : 'nav-links-mobile'}> 
 
           {links.map((el, i)=> {
             
-            const classname = idNames[i].link === "#" + className ? 'link-offsetTop' : 'nothing'
+            const classname = idNames[i].link === '#' + className ? 'link-offsetTop' : 'nothing'
             
             return <button key={idNames[i].id} type='button' className={classname} onClick={() => onClick(idNames[i].link)}>{el}</button>
           
