@@ -9,7 +9,7 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
         let isDeleting  = false;
         let txt = '';
         let t;
-      
+
         const  rotateText = () => {
            let string = texts[i]
            let newSpeed = speed
@@ -39,8 +39,9 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
           t =  setTimeout(() => rotateText(), newSpeed)
           return () => clearTimeout(t)
         }
-        
-        rotateText()
+
+        clearTimeout(t)
+        t = setTimeout(() => rotateText(), 100)
         
         return () => clearTimeout(t)
     }, [texts, speed, endSpeed])
