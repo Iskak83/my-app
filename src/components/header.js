@@ -16,7 +16,7 @@ export default function Header({className, language, change}) {
   const tongueBttn = language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'анг', ru: 'рус'}
 
   const changeLanguge = (language) => {
-    change.languageChanged(language)
+    return setTimeout(change.languageChanged(language), 3000)
   }
 
   const languages = (tongue) => (
