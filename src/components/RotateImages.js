@@ -43,7 +43,6 @@ const RotateImages = ({images, imgInfo, anime}) =>{
             t = setTimeout(() => rotateImages()
             , speed)
             return () => clearTimeout(t)
-             
           }
           
       rotateImages()
@@ -56,7 +55,6 @@ const RotateImages = ({images, imgInfo, anime}) =>{
            <div id="fade-img">
                 <img src={image} alt='' className={anime === 'fade' ? classFade : classSlide}/>
                 <div className={anime === 'fade' ? classSlide : classFade }>{imageInfo}</div>
-            
             </div>
     )
 }
