@@ -16,7 +16,7 @@
 - [Gatsby/React](https://www.gatsbyjs.com/docs/)
 - [SASS](https://sass-lang.com/)
 
-I implemented **_custom modules_** **RotateImages** and **TypeWriter** for animations, and **Burger** (dropdown menu) for **_mobile version_** to avoid external dependencies.
+I implemented **_custom components_** **RotateImages** and **TypeWriter** for animations, and **Burger** (dropdown menu) for a mobile version. Styled with custom CSS/SaSS to achieve minimalist web layout.
 
 # Author
 
