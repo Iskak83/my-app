@@ -6,7 +6,6 @@ import Bio from '../components/bio';
 import Projects from '../components/projects';
 import Education from '../components/education';
 import Hobby from '../components/hobbies'
-import Footer from "../components/footer"
 import {initialState, CHANGE_LANGUAGE, reducer} from '../components/state'
 import "./styles.scss"
 
@@ -30,7 +29,6 @@ const IndexPage = () => {
             <Projects/>
             <Education />
             <Hobby />
-            <Footer/>
         </Layout> 
     </LanguageContext.Provider>
   )

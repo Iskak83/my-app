@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp} from '@fortawesome/free-solid-svg-icons';
 import Header from './header'
+import Footer from "./footer"
 import './layout.scss'
 
 
@@ -18,9 +19,6 @@ const Layout = ({ children, language, change }) => {
   const [toTopBttn, setToTopBttn] = useState({id: 'to-top-bttn-hidden', toggle: true})
 
   const [className, setClassName] = useState('')
-
-  console.log('state', change)
-
 
   useEffect(() => {
 
@@ -54,9 +52,7 @@ const Layout = ({ children, language, change }) => {
       if(hobbyOffsetTop < winScroll && toTopBttn.toggle) setToTopBttn({id: 'to-top-bttn-shown', toggle: false})
       
       if(winScroll < hobbyOffsetTop && !toTopBttn.toggle) setToTopBttn({id: 'to-top-bttn-hidden', toggle: true})
-    
-    }
-  
+    } 
   }, [toTopBttn, className])
 
   const scrollTop = () => {
@@ -64,18 +60,19 @@ const Layout = ({ children, language, change }) => {
   };
 
   return (
-    <React.Fragment>
+    <React.Fragment >
       <Header className={className} language={language} change={change} id='header'/>
         
-          <div id='main'>
-            <main>{children}</main> 
-          </div>
+      <div id='main'>
+        <main>{children}</main> 
+      </div>
 
-            <div id={toTopBttn.id}>
-              <button type='button'  onClick={scrollTop} className='scroll-to-top-bttn'>
-                  <FontAwesomeIcon icon={faAngleUp} />
-              </button>
-          </div> 
+      <div id={toTopBttn.id}>
+          <button type='button'  onClick={scrollTop} className='scroll-to-top-bttn'>
+              <FontAwesomeIcon icon={faAngleUp} />
+          </button>
+      </div> 
+      <Footer/>
     </React.Fragment>
   )
 }

@@ -9,9 +9,9 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
         let isDeleting  = false;
         let txt = '';
         let t;
+        setText('')
         
         const  rotateText = () => {
-           
             let string = texts[i]
             let newSpeed = speed
             if(isDeleting){
@@ -46,7 +46,7 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
         return () => clearTimeout(t)
     }, [texts, speed, endSpeed])
    
-
+    
     return(
             <div className={className}>{text}</div>
     )

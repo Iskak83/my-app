@@ -5,19 +5,33 @@ import './header.scss'
 
 
 export default function Header({className, language, change}) {
+
+   const debounce =(func) => {
+    let timer
+  
+    return (...arg) => {
+      clearTimeout(timer);
+
+      timer = setTimeout(() => {
+        func.apply(this, arg)
+      }, 500)
+    }
+  }
   
   const [burger, setBurger] = React.useState(true)
  
-  function onClick(idName){
-    if(!burger)setBurger(true)
+
+  const onClick = debounce((idName) => {
+    if(!burger) setBurger(true)
     if(idName !== '') scrollTo(idName)
-  }
+  })
 
   const tongueBttn = language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'анг', ru: 'рус'}
  
-  const changeLanguge = (language) => {
-   setTimeout(() => change.languageChanged(language), 200)
-  }
+ 
+  const changeLanguge = debounce((tongue) => {
+    if(tongue !== language) return change.languageChanged(tongue) })
+
 
   const languages = (tongue) => (
     <div  className={tongue}>
@@ -52,9 +66,9 @@ export default function Header({className, language, change}) {
 
           {links.map((el, i)=> {
             
-            const classname = idNames[i].link === '#' + className ? 'link-offsetTop' : 'nothing'
+            const classN = idNames[i].link === '#' + className ? 'link-offsetTop' : ''
             
-            return <button key={idNames[i].id} type='button' className={classname} onClick={() => onClick(idNames[i].link)}>{el}</button>
+            return <button key={idNames[i].id} type='button' className={classN} onClick={() => onClick(idNames[i].link)}>{el}</button>
           
           })}
         

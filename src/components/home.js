@@ -19,6 +19,7 @@ const Home = () => {
   const endSpeed = 2000
   const className = 'type-writer'
   
+  
   return (
     <div id='home'>
       <div className='home'>
