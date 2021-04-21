@@ -8,7 +8,6 @@ export default function Header({className, language, change}) {
 
    const debounce =(func) => {
     let timer
-  
     return (...arg) => {
       clearTimeout(timer);
 
@@ -20,7 +19,6 @@ export default function Header({className, language, change}) {
   
   const [burger, setBurger] = React.useState(true)
  
-
   const onClick = debounce((idName) => {
     if(!burger) setBurger(true)
     if(idName !== '') scrollTo(idName)
@@ -28,10 +26,8 @@ export default function Header({className, language, change}) {
 
   const tongueBttn = language === 'english' ? {en: 'EN', ru: 'RU'} : {en: 'анг', ru: 'рус'}
  
- 
   const changeLanguge = debounce((tongue) => {
     if(tongue !== language) return change.languageChanged(tongue) })
-
 
   const languages = (tongue) => (
     <div  className={tongue}>
