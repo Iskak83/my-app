@@ -47,7 +47,6 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
         return () => clearTimeout(t)
     }, [texts, speed, endSpeed])
    
-    
     return(
             <div className={className}>{text}</div>
     )
