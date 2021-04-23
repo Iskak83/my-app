@@ -3,7 +3,6 @@ import TypeWriter from './TypeWriter'
 import {LanguageContext}  from '../pages/index'
 import './home.scss'
 
-
 const Home = () => {
 
   const {state} = useContext(LanguageContext)
@@ -14,11 +13,9 @@ const Home = () => {
   
   const texts = language === 'english' ? ['Trilinguist', 'Tennis fan','Cook', 'Pet lover', 'Hiker', 'Traveller'] : ['Трилингвист', 'Фанат тенниса', 'Повар-Кулинар', 'Любитель домашних животных', 'Горный турист', 'Путешественник' ]
 
-
   const speed = 50
   const endSpeed = 2000
   const className = 'type-writer'
-  
   
   return (
     <div id='home'>
