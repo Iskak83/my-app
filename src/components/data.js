@@ -107,4 +107,3 @@ export const education = [
         id: 4
     }
 ]
-
