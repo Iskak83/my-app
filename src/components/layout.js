@@ -13,7 +13,6 @@ import Header from './header'
 import Footer from "./footer"
 import './layout.scss'
 
-
 const Layout = ({ children, language, change }) => {
 
   const [toTopBttn, setToTopBttn] = useState({id: 'to-top-bttn-hidden', toggle: true})
