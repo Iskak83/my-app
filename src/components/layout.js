@@ -31,7 +31,6 @@ const Layout = ({ children, language, change }) => {
     const educationOffsetTop = document.getElementById('education').offsetTop;
   
     const hobbyOffsetTop = document.getElementById('hobby').offsetTop;
-  
 
     window.onscroll = function(){
    
