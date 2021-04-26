@@ -12,7 +12,6 @@ const Education = () => {
 	const {state} = useContext(LanguageContext)
 
 	const language = state.language 
-
 	const eduInfo = language === 'english' ? education : educationRU
 
 	return (
