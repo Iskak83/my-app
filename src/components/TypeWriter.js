@@ -36,7 +36,6 @@ const TypeWriter = ({texts, speed, endSpeed, className}) => {
             }else if(isDeleting && txt === texts[i]){
                 newSpeed = speed / 2
             }
-
           t =  setTimeout(() => rotateText(), newSpeed)
           return () => clearTimeout(t)
         }
