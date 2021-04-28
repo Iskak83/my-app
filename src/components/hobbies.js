@@ -33,9 +33,7 @@ const Hobby = () => {
             <h3>{'  >>>'}</h3>
           </div>
           <div id='hobby-container'>
-
             <RotateImages images={images} imgInfo={imgInfo} anime={'fade'} />
-
             <div id='hobby-story'>
             {readBttn ? (hobbyInfo[1][0]): hobbyInfo[1].map( el=> el)}
             
