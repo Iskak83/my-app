@@ -8,7 +8,6 @@ import './education.scss';
 
 
 const Education = () => {
-
 	const {state} = useContext(LanguageContext)
 
 	const language = state.language 
@@ -19,7 +18,6 @@ const Education = () => {
 			<div className='paragraph-title-edu'>
 				<img src={require('../images/education.jpg')} className='paragraph-title-edu' alt=''/>
 			</div>
-
 			<VerticalTimeline className='timeline-container'>
 				{eduInfo.map(el => (
 				<VerticalTimelineElement key={el.id}
